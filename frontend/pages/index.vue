@@ -67,6 +67,9 @@
             <h4 class="text-xl font-semibold mb-3">PWA Experience</h4>
             <p class="text-gray-600">Works offline, installs on any device, and provides a native app experience across
               all platforms.</p>
+            <NuxtLink to="/pwa-settings" class="button primary small rounded mt-4">
+              ⚙️ PWA Settings
+            </NuxtLink>
           </div>
         </div>
       </div>

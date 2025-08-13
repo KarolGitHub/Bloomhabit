@@ -213,11 +213,11 @@ Open [**http://localhost:3000**](http://localhost:3000) to view your app.
 - **Habits Module** - CRUD operations, garden logic, and flower growth mechanics
 - **Garden Visualization** - Interactive habit garden with Foundation CSS components
 - **AI Gardener** - OpenAI integration for personalized insights, habit coaching, and weekly reports
+- **PWA Features** - Offline support, push notifications, installable app experience, and service worker
 - **Docker Setup** - Local development environment with PostgreSQL
 
 ### 🚧 In Progress
 
-- **PWA Features** - Offline support and push notifications
 - **Habit Logging** - Daily habit completion tracking and analytics
 - **Advanced Analytics** - Detailed habit insights and progress reports
 
