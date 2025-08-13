@@ -30,12 +30,9 @@
     "pwa",
     "nuxt",
     "nestjs",
-    "ai"
-  ],
-  "author": "Your Name",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yourusername/bloomhabit.git"
-  }
+    "ai",
+    "foundation",
+    "tailwind",
+    "responsive"
+  ]
 }

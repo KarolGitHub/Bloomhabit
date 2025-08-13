@@ -4,7 +4,7 @@
 
 Bloomhabit is a habit-focused app that helps users create and maintain good habits while breaking bad ones, using a **garden-inspired metaphor**.
 Each habit is represented as a flower in your personal garden — one that **blooms** with consistency and **withers** when neglected.
-With **AI-driven insights**, **Progressive Web App (PWA)** support, and a **NestJS + Nuxt 3** tech stack, Bloomhabit is designed to help you **cultivate lasting positive change**.
+With **AI-driven insights**, **Progressive Web App (PWA)** support, and a **NestJS + Nuxt 3** tech stack enhanced with **Foundation CSS**, Bloomhabit is designed to help you **cultivate lasting positive change**.
 
 ---
 
@@ -16,6 +16,7 @@ With **AI-driven insights**, **Progressive Web App (PWA)** support, and a **Nest
 - 🔄 **Habit Swapping** – Replace bad habits with positive ones in your garden.
 - 🤖 **AI Gardener** – Get personalized habit insights, tips, and encouragement.
 - 📲 **PWA Support** – Works offline, installable on devices, and offers native-like experience.
+- 🎨 **Responsive Design** – Built with Foundation CSS and Tailwind CSS for beautiful, mobile-first experiences.
 - 🔔 **Reminders & Notifications** – Push notifications powered by Firebase Cloud Messaging.
 - 🔐 **Authentication** – Secure sign-in with OAuth and JWT.
 - 👥 **Community Gardens** _(future)_ – Group habit tracking and shared goals.
@@ -26,6 +27,7 @@ With **AI-driven insights**, **Progressive Web App (PWA)** support, and a **Nest
 ## 🛠 Tech Stack
 
 - **Frontend:** [Nuxt 3 (Vue.js)](https://nuxt.com/) with PWA support
+- **CSS Framework:** [Foundation CSS](https://get.foundation/) + [Tailwind CSS](https://tailwindcss.com/) for responsive design
 - **Backend:** [NestJS](https://nestjs.com/) (Node.js/TypeScript)
 - **Database:** [PostgreSQL](https://www.postgresql.org/)
 - **Auth:** OAuth & JWT
@@ -44,6 +46,7 @@ bloomhabit/
 │ ├── /composables # Reusable Vue composition functions
 │ ├── /plugins # Nuxt plugins (PWA, FCM, etc.)
 │ ├── /assets # Static styles & images
+│ │ └── /css # Foundation CSS + Tailwind CSS + custom styles
 │ └── nuxt.config.ts # Nuxt configuration
 │
 ├── /backend # NestJS backend service
@@ -67,6 +70,7 @@ bloomhabit/
 ## 🏗 High-Level Architecture
 
 - **Frontend (Nuxt 3 PWA):** Interactive UI, offline caching, push notifications, garden visualizations.
+- **CSS Framework:** Foundation CSS for responsive components + Tailwind CSS for utility-first styling.
 - **Backend (NestJS):** REST/GraphQL API for habits, authentication, AI features.
 - **Database (PostgreSQL):** Stores users, habits, streaks, and journal entries.
 - **AI Service:** External AI APIs to provide personalized recommendations.
@@ -84,6 +88,7 @@ bloomhabit/
 5. The AI Gardener analyzes streaks and patterns, sending personalized nudges.
 6. Users can keep journals that "enrich the soil" for future growth.
 7. Notifications remind users to maintain their habits.
+8. Responsive design ensures the garden looks beautiful on all devices.
 
 ---
 
@@ -200,7 +205,8 @@ Open [**http://localhost:3000**](http://localhost:3000) to view your app.
 ### ✅ Completed
 
 - **Project Structure** - Complete directory structure and configuration
-- **Frontend Foundation** - Nuxt 3 setup with PWA, Tailwind CSS, and landing page
+- **Frontend Foundation** - Nuxt 3 setup with PWA, Foundation CSS, Tailwind CSS, and landing page
+- **CSS Framework** - Foundation CSS + Tailwind CSS integration for responsive design
 - **Backend Foundation** - NestJS setup with TypeORM and PostgreSQL
 - **Database Schema** - Complete entity models for users, habits, and journal entries
 - **Basic API Structure** - Users module with CRUD operations
@@ -218,6 +224,32 @@ Open [**http://localhost:3000**](http://localhost:3000) to view your app.
 - **PWA Features** - Offline support and push notifications
 - **Community Features** - Shared gardens and group challenges
 - **Mobile App** - React Native or Flutter implementation
+
+---
+
+## 🎨 CSS Framework Features
+
+### **Foundation CSS**
+
+- **Responsive Grid System** - Mobile-first grid layout
+- **Component Library** - Buttons, forms, navigation, modals
+- **Responsive Utilities** - Show/hide classes for different screen sizes
+- **Accessibility** - Built-in accessibility features
+- **Customizable** - Easy to theme with CSS custom properties
+
+### **Tailwind CSS**
+
+- **Utility-First** - Rapid UI development with utility classes
+- **Custom Components** - Garden-themed component classes
+- **Responsive Design** - Mobile-first responsive utilities
+- **Custom Colors** - Garden-inspired color palette
+
+### **Integration Benefits**
+
+- **Best of Both Worlds** - Foundation's robust components + Tailwind's utility classes
+- **Responsive Design** - Mobile-first approach with Foundation's grid system
+- **Theme Consistency** - Unified color scheme and design language
+- **Developer Experience** - Familiar tools for both frameworks
 
 ---
 
@@ -264,6 +296,7 @@ Available in `/docs`:
 - AI integration details
 - PWA setup & caching
 - Deployment guides
+- CSS Framework usage guide
 
 ---
 
@@ -283,12 +316,6 @@ Available in `/docs`:
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 

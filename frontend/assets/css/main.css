@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Foundation CSS utilities */
+@import 'foundation-sites/dist/css/foundation.min.css';
+
 @layer base {
   :root {
     --color-primary: 34 197 94;
@@ -43,10 +46,83 @@
   .habit-flower.wilting {
     @apply bg-gradient-to-br from-yellow-400 to-orange-400 text-white;
   }
+
+  /* Foundation-enhanced components */
+  .foundation-grid {
+    @apply grid;
+  }
+
+  .foundation-flex {
+    @apply flex;
+  }
+
+  .foundation-responsive {
+    @apply w-full;
+  }
 }
 
 @layer utilities {
   .text-gradient {
     @apply bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent;
+  }
+
+  /* Foundation utility classes */
+  .foundation-show {
+    display: block !important;
+  }
+
+  .foundation-hide {
+    display: none !important;
+  }
+
+  .foundation-visible {
+    visibility: visible !important;
+  }
+
+  .foundation-invisible {
+    visibility: hidden !important;
+  }
+}
+
+/* Foundation-specific overrides for Bloomhabit theme */
+.foundation-override {
+  /* Ensure Foundation components use our garden theme colors */
+  --foundation-primary: rgb(34, 197, 94);
+  --foundation-secondary: rgb(168, 85, 247);
+  --foundation-success: rgb(34, 197, 94);
+  --foundation-warning: rgb(251, 191, 36);
+  --foundation-alert: rgb(239, 68, 68);
+}
+
+/* Responsive Foundation grid helpers */
+@media (max-width: 639px) {
+  .foundation-small-only {
+    display: block !important;
+  }
+
+  .foundation-medium-up {
+    display: none !important;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .foundation-medium-only {
+    display: block !important;
+  }
+
+  .foundation-small-only,
+  .foundation-large-up {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .foundation-large-up {
+    display: block !important;
+  }
+
+  .foundation-small-only,
+  .foundation-medium-only {
+    display: none !important;
   }
 }

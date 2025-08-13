@@ -4,7 +4,10 @@ export default defineNuxtConfig({
 
   modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', '@nuxtjs/pwa'],
 
-  css: ['~/assets/css/main.css'],
+  css: [
+    'foundation-sites/dist/css/foundation.min.css',
+    '~/assets/css/main.css',
+  ],
 
   app: {
     head: {
@@ -19,6 +22,12 @@ export default defineNuxtConfig({
         },
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+      script: [
+        {
+          src: 'https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js',
+          defer: true,
+        },
+      ],
     },
   },
 

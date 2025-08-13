@@ -76,6 +76,12 @@ backend/build/
 backend/.env
 backend/.env.*
 
+# Foundation CSS specific
+foundation-sites/
+foundation-css/
+foundation-build/
+foundation-cache/
+
 # Database
 *.db
 *.sqlite
