@@ -206,24 +206,25 @@ Open [**http://localhost:3000**](http://localhost:3000) to view your app.
 
 - **Project Structure** - Complete directory structure and configuration
 - **Frontend Foundation** - Nuxt 3 setup with PWA, Foundation CSS, Tailwind CSS, and landing page
-- **CSS Framework** - Foundation CSS + Tailwind CSS integration for responsive design
+- **CSS Framework** - Foundation CSS + Tailwind CSS + SCSS integration for responsive design
 - **Backend Foundation** - NestJS setup with TypeORM and PostgreSQL
 - **Database Schema** - Complete entity models for users, habits, and journal entries
-- **Basic API Structure** - Users module with CRUD operations
+- **Authentication System** - JWT guards, OAuth integration, and secure endpoints
+- **Habits Module** - CRUD operations, garden logic, and flower growth mechanics
+- **Garden Visualization** - Interactive habit garden with Foundation CSS components
 - **Docker Setup** - Local development environment with PostgreSQL
 
 ### 🚧 In Progress
 
-- **Authentication System** - JWT guards and OAuth integration
-- **Habits Module** - CRUD operations and garden logic
-- **Garden Visualization** - Flower growth and health mechanics
+- **AI Gardener** - OpenAI integration for personalized insights
+- **PWA Features** - Offline support and push notifications
+- **Habit Logging** - Daily habit completion tracking and analytics
 
 ### 📋 Planned
 
-- **AI Gardener** - OpenAI integration for personalized insights
-- **PWA Features** - Offline support and push notifications
 - **Community Features** - Shared gardens and group challenges
 - **Mobile App** - React Native or Flutter implementation
+- **Advanced Analytics** - Detailed habit insights and progress reports
 
 ---
 

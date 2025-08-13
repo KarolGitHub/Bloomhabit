@@ -21,21 +21,23 @@
     <!-- Hero Section -->
     <section class="py-20 bg-gradient-to-br from-green-50 to-blue-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-5xl font-bold text-gray-900 mb-6">
-          Grow Your Best Self,
-          <span class="text-gradient">One Bloom at a Time</span>
-        </h2>
-        <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-          Transform your habits into a beautiful garden. Each habit is a flower that blooms with consistency
-          and gently reminds you when it needs care. Let our AI Gardener guide your journey to lasting change.
-        </p>
-        <div class="flex justify-center space-x-4">
-          <button class="flower-button text-lg px-8 py-4">
-            Start Growing 🌱
-          </button>
-          <button class="bg-white text-green-600 border-2 border-green-600 px-8 py-4 rounded-full font-semibold hover:bg-green-50 transition-colors">
-            Learn More
-          </button>
+        <div class="text-center">
+          <h1 class="text-6xl font-bold text-gradient mb-6">
+            🌸 Bloomhabit
+          </h1>
+          <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            Transform your habits into a beautiful garden. Watch them bloom with consistency
+            and gently wilt when neglected. Your personal AI Gardener will help you cultivate
+            lasting positive change.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <NuxtLink to="/garden" class="flower-button foundation-enhanced">
+              🌱 Start Your Garden
+            </NuxtLink>
+            <button class="flower-button">
+              🎯 Learn More
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -48,17 +50,20 @@
           <div class="garden-card text-center">
             <div class="text-4xl mb-4">🌱</div>
             <h4 class="text-xl font-semibold mb-3">Visual Garden Metaphor</h4>
-            <p class="text-gray-600">See your habits as flowers that grow and bloom with daily care, making progress tangible and motivating.</p>
+            <p class="text-gray-600">See your habits as flowers that grow and bloom with daily care, making progress
+              tangible and motivating.</p>
           </div>
           <div class="garden-card text-center">
             <div class="text-4xl mb-4">🤖</div>
             <h4 class="text-xl font-semibold mb-3">AI Gardener</h4>
-            <p class="text-gray-600">Get personalized insights, tips, and encouragement from our AI that understands your unique journey.</p>
+            <p class="text-gray-600">Get personalized insights, tips, and encouragement from our AI that understands
+              your unique journey.</p>
           </div>
           <div class="garden-card text-center">
             <div class="text-4xl mb-4">📱</div>
             <h4 class="text-xl font-semibold mb-3">PWA Experience</h4>
-            <p class="text-gray-600">Works offline, installs on any device, and provides a native app experience across all platforms.</p>
+            <p class="text-gray-600">Works offline, installs on any device, and provides a native app experience across
+              all platforms.</p>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', '@nuxtjs/pwa'],
+  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt'],
 
   css: ['~/assets/scss/main.scss'],
 
@@ -39,21 +39,6 @@ export default defineNuxtConfig({
           defer: true,
         },
       ],
-    },
-  },
-
-  pwa: {
-    registerType: 'autoUpdate',
-    workbox: {
-      navigateFallback: '/',
-      globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
-    },
-    client: {
-      installPrompt: true,
-    },
-    devOptions: {
-      enabled: true,
-      type: 'module',
     },
   },
 
