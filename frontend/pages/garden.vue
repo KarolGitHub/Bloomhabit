@@ -9,9 +9,14 @@
             <p class="text-gray-600 text-lg">Watch your habits bloom and grow</p>
           </div>
           <div class="cell medium-4 text-right">
-            <button class="button primary large rounded" @click="showCreateHabit = true">
-              <span class="mr-2">🌿</span> Plant New Habit
-            </button>
+            <div class="button-group">
+              <button class="button primary large rounded" @click="showCreateHabit = true">
+                <span class="mr-2">🌿</span> Plant New Habit
+              </button>
+              <NuxtLink to="/ai-gardener" class="button secondary large rounded">
+                <span class="mr-2">🤖</span> AI Gardener
+              </NuxtLink>
+            </div>
           </div>
         </div>
       </div>

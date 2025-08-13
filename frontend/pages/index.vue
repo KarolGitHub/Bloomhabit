@@ -58,6 +58,9 @@
             <h4 class="text-xl font-semibold mb-3">AI Gardener</h4>
             <p class="text-gray-600">Get personalized insights, tips, and encouragement from our AI that understands
               your unique journey.</p>
+            <NuxtLink to="/ai-gardener" class="button primary small rounded mt-4">
+              🤖 Visit AI Gardener
+            </NuxtLink>
           </div>
           <div class="garden-card text-center">
             <div class="text-4xl mb-4">📱</div>

@@ -212,19 +212,20 @@ Open [**http://localhost:3000**](http://localhost:3000) to view your app.
 - **Authentication System** - JWT guards, OAuth integration, and secure endpoints
 - **Habits Module** - CRUD operations, garden logic, and flower growth mechanics
 - **Garden Visualization** - Interactive habit garden with Foundation CSS components
+- **AI Gardener** - OpenAI integration for personalized insights, habit coaching, and weekly reports
 - **Docker Setup** - Local development environment with PostgreSQL
 
 ### 🚧 In Progress
 
-- **AI Gardener** - OpenAI integration for personalized insights
 - **PWA Features** - Offline support and push notifications
 - **Habit Logging** - Daily habit completion tracking and analytics
+- **Advanced Analytics** - Detailed habit insights and progress reports
 
 ### 📋 Planned
 
 - **Community Features** - Shared gardens and group challenges
 - **Mobile App** - React Native or Flutter implementation
-- **Advanced Analytics** - Detailed habit insights and progress reports
+- **Real-time Notifications** - Push notifications and reminders
 
 ---
 
