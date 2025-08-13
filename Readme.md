@@ -27,7 +27,7 @@ With **AI-driven insights**, **Progressive Web App (PWA)** support, and a **Nest
 ## 🛠 Tech Stack
 
 - **Frontend:** [Nuxt 3 (Vue.js)](https://nuxt.com/) with PWA support
-- **CSS Framework:** [Foundation CSS](https://get.foundation/) + [Tailwind CSS](https://tailwindcss.com/) for responsive design
+- **CSS Framework:** [Foundation CSS](https://get.foundation/) + [Tailwind CSS](https://tailwindcss.com/) + [SCSS](https://sass-lang.com/) for responsive design
 - **Backend:** [NestJS](https://nestjs.com/) (Node.js/TypeScript)
 - **Database:** [PostgreSQL](https://www.postgresql.org/)
 - **Auth:** OAuth & JWT
@@ -229,13 +229,14 @@ Open [**http://localhost:3000**](http://localhost:3000) to view your app.
 
 ## 🎨 CSS Framework Features
 
-### **Foundation CSS**
+### **Foundation CSS + SCSS**
 
-- **Responsive Grid System** - Mobile-first grid layout
-- **Component Library** - Buttons, forms, navigation, modals
+- **Responsive Grid System** - Mobile-first grid layout with SCSS customization
+- **Component Library** - Buttons, forms, navigation, modals with SCSS variables
 - **Responsive Utilities** - Show/hide classes for different screen sizes
 - **Accessibility** - Built-in accessibility features
-- **Customizable** - Easy to theme with CSS custom properties
+- **SCSS Customization** - Easy theming with SCSS variables and mixins
+- **Modular Components** - Import only the Foundation components you need
 
 ### **Tailwind CSS**
 
@@ -244,12 +245,21 @@ Open [**http://localhost:3000**](http://localhost:3000) to view your app.
 - **Responsive Design** - Mobile-first responsive utilities
 - **Custom Colors** - Garden-inspired color palette
 
+### **SCSS Benefits**
+
+- **Variables & Mixins** - Reusable styles and consistent theming
+- **Nested Rules** - Cleaner, more maintainable CSS structure
+- **Functions** - Advanced color manipulation and calculations
+- **Partials** - Modular SCSS file organization
+- **Foundation Integration** - Direct access to Foundation's SCSS source
+
 ### **Integration Benefits**
 
-- **Best of Both Worlds** - Foundation's robust components + Tailwind's utility classes
+- **Best of Both Worlds** - Foundation's robust components + Tailwind's utility classes + SCSS power
 - **Responsive Design** - Mobile-first approach with Foundation's grid system
-- **Theme Consistency** - Unified color scheme and design language
-- **Developer Experience** - Familiar tools for both frameworks
+- **Theme Consistency** - Unified color scheme and design language via SCSS variables
+- **Developer Experience** - Familiar tools for all three frameworks
+- **Performance** - Only include the Foundation components you actually use
 
 ---
 

@@ -1,0 +1,356 @@
+// Foundation SCSS Settings
+@import 'foundation-settings';
+
+// Foundation SCSS imports
+@import 'foundation-sites/scss/foundation';
+@import 'foundation-sites/scss/util/util';
+
+// Include Foundation components you want to use
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+@include foundation-forms;
+@include foundation-button;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+@include foundation-responsive-embed;
+@include foundation-reveal;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+
+// Tailwind CSS directives
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Custom Bloomhabit variables
+$bloomhabit-primary: #22c55e;
+$bloomhabit-secondary: #a855f7;
+$bloomhabit-accent: #fbbf24;
+$bloomhabit-success: #22c55e;
+$bloomhabit-warning: #fbbf24;
+$bloomhabit-error: #ef4444;
+
+// Foundation theme overrides
+$primary-color: $bloomhabit-primary;
+$secondary-color: $bloomhabit-secondary;
+$success-color: $bloomhabit-success;
+$warning-color: $bloomhabit-warning;
+$alert-color: $bloomhabit-error;
+
+// Custom Foundation component styles
+.button {
+  &.primary {
+    background-color: $bloomhabit-primary;
+    border-color: $bloomhabit-primary;
+
+    &:hover {
+      background-color: darken($bloomhabit-primary, 10%);
+      border-color: darken($bloomhabit-primary, 10%);
+    }
+  }
+
+  &.secondary {
+    background-color: $bloomhabit-secondary;
+    border-color: $bloomhabit-secondary;
+
+    &:hover {
+      background-color: darken($bloomhabit-secondary, 10%);
+      border-color: darken($bloomhabit-secondary, 10%);
+    }
+  }
+
+  &.success {
+    background-color: $bloomhabit-success;
+    border-color: $bloomhabit-success;
+
+    &:hover {
+      background-color: darken($bloomhabit-success, 10%);
+      border-color: darken($bloomhabit-success, 10%);
+    }
+  }
+
+  &.alert {
+    background-color: $bloomhabit-error;
+    border-color: $bloomhabit-error;
+
+    &:hover {
+      background-color: darken($bloomhabit-error, 10%);
+      border-color: darken($bloomhabit-error, 10%);
+    }
+  }
+}
+
+// Custom Bloomhabit component styles
+@layer components {
+  .garden-card {
+    @apply bg-white rounded-xl shadow-lg border border-green-100 p-6 hover:shadow-xl transition-all duration-300;
+
+    // Foundation grid integration
+    &.foundation-grid {
+      @extend .grid-container;
+    }
+  }
+
+  .flower-button {
+    @apply bg-gradient-to-r from-green-400 to-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:from-green-500 hover:to-blue-600 transition-all duration-200 transform hover:scale-105;
+
+    // Foundation button enhancement
+    &.foundation-enhanced {
+      @extend .button;
+      @extend .primary;
+      @extend .large;
+      @extend .rounded;
+    }
+  }
+
+  .habit-flower {
+    @apply w-24 h-24 rounded-full flex items-center justify-center text-2xl font-bold shadow-md transition-all duration-300;
+
+    &.blooming {
+      @apply bg-gradient-to-br from-pink-400 to-red-400 text-white;
+    }
+
+    &.growing {
+      @apply bg-gradient-to-br from-green-400 to-blue-400 text-white;
+    }
+
+    &.wilting {
+      @apply bg-gradient-to-br from-yellow-400 to-orange-400 text-white;
+    }
+  }
+
+  // Foundation-enhanced components
+  .foundation-grid {
+    @extend .grid-container;
+  }
+
+  .foundation-flex {
+    @extend .flex-container;
+  }
+
+  .foundation-responsive {
+    @extend .responsive-embed;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent;
+  }
+
+  // Foundation utility classes
+  .foundation-show {
+    display: block !important;
+  }
+
+  .foundation-hide {
+    display: none !important;
+  }
+
+  .foundation-visible {
+    visibility: visible !important;
+  }
+
+  .foundation-invisible {
+    visibility: hidden !important;
+  }
+}
+
+// Foundation-specific overrides for Bloomhabit theme
+.foundation-override {
+  // Ensure Foundation components use our garden theme colors
+  --foundation-primary: #{$bloomhabit-primary};
+  --foundation-secondary: #{$bloomhabit-secondary};
+  --foundation-success: #{$bloomhabit-success};
+  --foundation-warning: #{$bloomhabit-warning};
+  --foundation-alert: #{$bloomhabit-error};
+}
+
+// Responsive Foundation grid helpers
+@include breakpoint(small only) {
+  .foundation-small-only {
+    display: block !important;
+  }
+
+  .foundation-medium-up {
+    display: none !important;
+  }
+}
+
+@include breakpoint(medium only) {
+  .foundation-medium-only {
+    display: block !important;
+  }
+
+  .foundation-small-only,
+  .foundation-large-up {
+    display: none !important;
+  }
+}
+
+@include breakpoint(large up) {
+  .foundation-large-up {
+    display: block !important;
+  }
+
+  .foundation-small-only,
+  .foundation-medium-only {
+    display: none !important;
+  }
+}
+
+// Custom Foundation form styling
+.form-input {
+  @extend .input;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.5rem;
+  transition: border-color 0.2s ease;
+
+  &:focus {
+    border-color: $bloomhabit-primary;
+    box-shadow: 0 0 0 3px rgba($bloomhabit-primary, 0.1);
+  }
+}
+
+.form-label {
+  @extend .label;
+  font-weight: 600;
+  color: #374151;
+}
+
+// Foundation callout enhancements
+.callout {
+  &.garden-theme {
+    border-left: 4px solid $bloomhabit-primary;
+    background-color: rgba($bloomhabit-primary, 0.05);
+
+    &.success {
+      border-left-color: $bloomhabit-success;
+      background-color: rgba($bloomhabit-success, 0.05);
+    }
+
+    &.warning {
+      border-left-color: $bloomhabit-warning;
+      background-color: rgba($bloomhabit-warning, 0.05);
+    }
+
+    &.alert {
+      border-left-color: $bloomhabit-error;
+      background-color: rgba($bloomhabit-error, 0.05);
+    }
+  }
+}
+
+// Foundation navigation enhancements
+.top-bar {
+  background: linear-gradient(
+    135deg,
+    $bloomhabit-primary,
+    $bloomhabit-secondary
+  );
+
+  .top-bar-title {
+    color: white;
+    font-weight: bold;
+  }
+
+  .top-bar-left,
+  .top-bar-right {
+    .menu {
+      background: transparent;
+
+      li {
+        a {
+          color: white;
+
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Foundation modal enhancements
+.reveal {
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  .reveal-header {
+    background: linear-gradient(
+      135deg,
+      $bloomhabit-primary,
+      $bloomhabit-secondary
+    );
+    color: white;
+    padding: 1.5rem;
+    border-radius: 1rem 1rem 0 0;
+
+    .close-button {
+      color: white;
+      font-size: 1.5rem;
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+
+  .reveal-content {
+    padding: 1.5rem;
+  }
+}
+
+// Foundation accordion enhancements
+.accordion {
+  .accordion-item {
+    .accordion-title {
+      background-color: rgba($bloomhabit-primary, 0.1);
+      color: $bloomhabit-primary;
+      font-weight: 600;
+
+      &:hover {
+        background-color: rgba($bloomhabit-primary, 0.2);
+      }
+
+      &::before {
+        color: $bloomhabit-primary;
+      }
+    }
+
+    .accordion-content {
+      border: 1px solid rgba($bloomhabit-primary, 0.2);
+      border-top: none;
+    }
+  }
+}

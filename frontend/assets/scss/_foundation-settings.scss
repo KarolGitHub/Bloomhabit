@@ -1,0 +1,166 @@
+// Foundation SCSS Settings for Bloomhabit
+// This file customizes Foundation's default settings
+
+// Global styles
+$global-font-size: 100%;
+$global-lineheight: 1.5;
+$global-weight-normal: 400;
+$global-weight-bold: 700;
+$global-radius: 0.5rem;
+$global-text-direction: ltr;
+
+// Colors
+$primary-color: #22c55e;
+$secondary-color: #a855f7;
+$success-color: #22c55e;
+$warning-color: #fbbf24;
+$alert-color: #ef4444;
+
+// Typography
+$header-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  Roboto, sans-serif;
+$body-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  Roboto, sans-serif;
+$header-font-weight: 600;
+$header-lineheight: 1.2;
+$header-margin-bottom: 1rem;
+$header-styles: (
+  'small': (
+    'h1': (
+      'font-size': 2rem,
+    ),
+    'h2': (
+      'font-size': 1.75rem,
+    ),
+    'h3': (
+      'font-size': 1.5rem,
+    ),
+    'h4': (
+      'font-size': 1.25rem,
+    ),
+    'h5': (
+      'font-size': 1.125rem,
+    ),
+    'h6': (
+      'font-size': 1rem,
+    ),
+  ),
+  'medium': (
+    'h1': (
+      'font-size': 2.5rem,
+    ),
+    'h2': (
+      'font-size': 2rem,
+    ),
+    'h3': (
+      'font-size': 1.75rem,
+    ),
+    'h4': (
+      'font-size': 1.5rem,
+    ),
+    'h5': (
+      'font-size': 1.25rem,
+    ),
+    'h6': (
+      'font-size': 1.125rem,
+    ),
+  ),
+);
+
+// Grid
+$grid-row-width: 1200px;
+$grid-column-count: 12;
+$grid-column-gutter: 30px;
+$grid-column-align-edge: true;
+$block-grid-max: 8;
+
+// Buttons
+$button-padding: 0.75rem 1.5rem;
+$button-margin: 0 0 1rem 0;
+$button-fill: solid;
+$button-background: $primary-color;
+$button-background-hover: darken($primary-color, 10%);
+$button-color: white;
+$button-color-alt: $primary-color;
+$button-radius: $global-radius;
+$button-sizes: (
+  tiny: 0.625rem,
+  small: 0.75rem,
+  default: 0.875rem,
+  large: 1.25rem,
+);
+
+// Forms
+$form-spacing: 1rem;
+$form-label-font-size: 0.875rem;
+$form-label-font-weight: 600;
+$form-label-color: #374151;
+$input-padding: 0.75rem;
+$input-border: 2px solid #e5e7eb;
+$input-border-focus: 2px solid $primary-color;
+$input-shadow: none;
+$input-shadow-focus: 0 0 0 3px rgba($primary-color, 0.1);
+$input-radius: $global-radius;
+$input-transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+// Callouts
+$callout-padding: 1rem;
+$callout-margin: 0 0 1rem 0;
+$callout-border: 1px solid #e5e7eb;
+$callout-border-radius: $global-radius;
+$callout-background-fade: 85%;
+$callout-background-fade-hover: 90%;
+
+// Reveal (Modals)
+$reveal-background: white;
+$reveal-width: 600px;
+$reveal-max-width: 90vw;
+$reveal-padding: 1.5rem;
+$reveal-border: 1px solid #e5e7eb;
+$reveal-radius: $global-radius;
+$reveal-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+// Top Bar
+$topbar-padding: 0.5rem;
+$topbar-background: linear-gradient(135deg, $primary-color, $secondary-color);
+$topbar-link-color: white;
+$topbar-link-color-hover: rgba(255, 255, 255, 0.8);
+$topbar-link-color-active: white;
+$topbar-link-color-active-hover: rgba(255, 255, 255, 0.8);
+$topbar-link-background: transparent;
+$topbar-link-background-hover: rgba(255, 255, 255, 0.1);
+$topbar-link-background-active: rgba(255, 255, 255, 0.1);
+$topbar-link-background-active-hover: rgba(255, 255, 255, 0.2);
+
+// Accordion
+$accordion-background: white;
+$accordion-plus-color: $primary-color;
+$accordion-minus-color: $primary-color;
+$accordion-title-color: $primary-color;
+$accordion-item-background-hover: rgba($primary-color, 0.05);
+$accordion-item-background-active: rgba($primary-color, 0.1);
+$accordion-content-background: white;
+$accordion-content-border: 1px solid rgba($primary-color, 0.2);
+$accordion-content-color: #374151;
+$accordion-content-padding: 1rem;
+
+// Breakpoints
+$breakpoints: (
+  small: 0,
+  medium: 640px,
+  large: 1024px,
+  xlarge: 1200px,
+  xxlarge: 1440px,
+);
+
+// Visibility classes
+$include-visibility-classes: true;
+$include-print-styles: true;
+
+// Float classes
+$include-float-classes: true;
+$include-rtl: false;
+
+// Flexbox utilities
+$include-flex-classes: true;
+$include-xy-grid-classes: true;

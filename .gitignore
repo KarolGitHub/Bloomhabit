@@ -82,6 +82,12 @@ foundation-css/
 foundation-build/
 foundation-cache/
 
+# SCSS specific
+.sass-cache/
+*.css.map
+*.scss.map
+.scss-cache/
+
 # Database
 *.db
 *.sqlite

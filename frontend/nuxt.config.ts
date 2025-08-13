@@ -4,10 +4,21 @@ export default defineNuxtConfig({
 
   modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', '@nuxtjs/pwa'],
 
-  css: [
-    'foundation-sites/dist/css/foundation.min.css',
-    '~/assets/css/main.css',
-  ],
+  css: ['~/assets/scss/main.scss'],
+
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `
+            @import "foundation-sites/scss/foundation";
+            @import "foundation-sites/scss/util/util";
+            @import "foundation-sites/scss/global";
+          `,
+        },
+      },
+    },
+  },
 
   app: {
     head: {
