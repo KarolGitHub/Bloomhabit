@@ -1,0 +1,310 @@
+{
+  "app": {
+    "name": "Bloomhabit",
+    "description": "Habit tracking and personal development platform"
+  },
+  "common": {
+    "success": {
+      "created": "Successfully created",
+      "updated": "Successfully updated",
+      "deleted": "Successfully deleted",
+      "retrieved": "Successfully retrieved"
+    },
+    "error": {
+      "notFound": "Resource not found",
+      "badRequest": "Bad request",
+      "unauthorized": "Unauthorized",
+      "forbidden": "Forbidden",
+      "internalError": "Internal server error",
+      "validationFailed": "Validation failed",
+      "databaseError": "Database error",
+      "networkError": "Network error"
+    },
+    "validation": {
+      "required": "This field is required",
+      "email": "Please enter a valid email address",
+      "minLength": "Must be at least {min} characters",
+      "maxLength": "Must be no more than {max} characters",
+      "minValue": "Must be at least {min}",
+      "maxValue": "Must be no more than {max}",
+      "pattern": "Please enter a valid format",
+      "unique": "This value must be unique",
+      "passwordMatch": "Passwords must match",
+      "dateRange": "End date must be after start date",
+      "invalidFormat": "Invalid format",
+      "invalidType": "Invalid type",
+      "invalidValue": "Invalid value"
+    }
+  },
+  "auth": {
+    "success": {
+      "login": "Login successful",
+      "register": "Registration successful",
+      "logout": "Logout successful",
+      "passwordReset": "Password reset email sent",
+      "passwordChanged": "Password changed successfully"
+    },
+    "error": {
+      "invalidCredentials": "Invalid email or password",
+      "userExists": "User already exists",
+      "userNotFound": "User not found",
+      "invalidToken": "Invalid or expired token",
+      "insufficientPermissions": "Insufficient permissions",
+      "accountLocked": "Account is locked",
+      "tooManyAttempts": "Too many login attempts"
+    },
+    "validation": {
+      "emailRequired": "Email is required",
+      "passwordRequired": "Password is required",
+      "passwordMinLength": "Password must be at least 8 characters",
+      "passwordComplexity": "Password must contain uppercase, lowercase, number and special character",
+      "confirmPasswordMatch": "Passwords must match",
+      "emailInvalid": "Please enter a valid email address"
+    }
+  },
+  "user": {
+    "success": {
+      "profileUpdated": "Profile updated successfully",
+      "avatarUpdated": "Avatar updated successfully",
+      "preferencesUpdated": "Preferences updated successfully"
+    },
+    "error": {
+      "profileNotFound": "Profile not found",
+      "avatarUploadFailed": "Avatar upload failed",
+      "invalidAvatarFormat": "Invalid avatar format"
+    },
+    "validation": {
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "firstNameMinLength": "First name must be at least 2 characters",
+      "lastNameMinLength": "Last name must be at least 2 characters",
+      "bioMaxLength": "Bio must be no more than 500 characters",
+      "invalidDateOfBirth": "Invalid date of birth"
+    }
+  },
+  "habit": {
+    "success": {
+      "created": "Habit created successfully",
+      "updated": "Habit updated successfully",
+      "deleted": "Habit deleted successfully",
+      "completed": "Habit marked as completed",
+      "skipped": "Habit marked as skipped"
+    },
+    "error": {
+      "notFound": "Habit not found",
+      "alreadyCompleted": "Habit already completed for today",
+      "cannotDeleteActive": "Cannot delete active habit",
+      "invalidFrequency": "Invalid frequency setting"
+    },
+    "validation": {
+      "nameRequired": "Habit name is required",
+      "nameMinLength": "Habit name must be at least 3 characters",
+      "nameMaxLength": "Habit name must be no more than 100 characters",
+      "descriptionMaxLength": "Description must be no more than 500 characters",
+      "categoryRequired": "Category is required",
+      "frequencyRequired": "Frequency is required",
+      "invalidColor": "Invalid color format",
+      "invalidIcon": "Invalid icon"
+    }
+  },
+  "goal": {
+    "success": {
+      "created": "Goal created successfully",
+      "updated": "Goal updated successfully",
+      "deleted": "Goal deleted successfully",
+      "completed": "Goal marked as completed",
+      "paused": "Goal paused successfully",
+      "resumed": "Goal resumed successfully"
+    },
+    "error": {
+      "notFound": "Goal not found",
+      "alreadyCompleted": "Goal already completed",
+      "cannotPauseCompleted": "Cannot pause completed goal",
+      "cannotResumeActive": "Cannot resume active goal"
+    },
+    "validation": {
+      "titleRequired": "Goal title is required",
+      "titleMinLength": "Goal title must be at least 5 characters",
+      "titleMaxLength": "Goal title must be no more than 200 characters",
+      "descriptionMaxLength": "Description must be no more than 1000 characters",
+      "typeRequired": "Goal type is required",
+      "difficultyRequired": "Difficulty is required",
+      "priorityRequired": "Priority is required",
+      "targetDateRequired": "Target date is required",
+      "targetDateFuture": "Target date must be in the future",
+      "startDatePast": "Start date cannot be in the future",
+      "invalidTargetValue": "Invalid target value",
+      "milestonesMaxLength": "Too many milestones"
+    }
+  },
+  "goalProgress": {
+    "success": {
+      "added": "Progress added successfully",
+      "updated": "Progress updated successfully",
+      "deleted": "Progress deleted successfully"
+    },
+    "error": {
+      "notFound": "Progress entry not found",
+      "goalNotFound": "Goal not found",
+      "invalidValue": "Invalid progress value",
+      "dateInFuture": "Progress date cannot be in the future"
+    },
+    "validation": {
+      "valueRequired": "Progress value is required",
+      "valuePositive": "Progress value must be positive",
+      "dateRequired": "Date is required",
+      "notesMaxLength": "Notes must be no more than 500 characters"
+    }
+  },
+  "community": {
+    "success": {
+      "gardenCreated": "Community garden created successfully",
+      "gardenJoined": "Successfully joined community garden",
+      "gardenLeft": "Successfully left community garden",
+      "challengeCreated": "Challenge created successfully",
+      "challengeJoined": "Successfully joined challenge",
+      "invitationSent": "Invitation sent successfully"
+    },
+    "error": {
+      "gardenNotFound": "Community garden not found",
+      "challengeNotFound": "Challenge not found",
+      "alreadyMember": "Already a member",
+      "notMember": "Not a member",
+      "insufficientPermissions": "Insufficient permissions",
+      "gardenFull": "Community garden is full",
+      "challengeFull": "Challenge is full"
+    },
+    "validation": {
+      "nameRequired": "Name is required",
+      "nameMinLength": "Name must be at least 3 characters",
+      "nameMaxLength": "Name must be no more than 100 characters",
+      "descriptionMaxLength": "Description must be no more than 1000 characters",
+      "maxMembersRequired": "Maximum members is required",
+      "maxMembersRange": "Maximum members must be between 2 and 1000",
+      "startDateRequired": "Start date is required",
+      "endDateRequired": "End date is required",
+      "endDateAfterStart": "End date must be after start date"
+    }
+  },
+  "notification": {
+    "success": {
+      "sent": "Notification sent successfully",
+      "markedAsRead": "Notification marked as read",
+      "deleted": "Notification deleted successfully"
+    },
+    "error": {
+      "notFound": "Notification not found",
+      "sendFailed": "Failed to send notification",
+      "invalidRecipient": "Invalid recipient"
+    },
+    "validation": {
+      "titleRequired": "Title is required",
+      "titleMaxLength": "Title must be no more than 200 characters",
+      "messageRequired": "Message is required",
+      "messageMaxLength": "Message must be no more than 1000 characters",
+      "typeRequired": "Type is required",
+      "recipientRequired": "Recipient is required"
+    }
+  },
+  "ai": {
+    "success": {
+      "insightGenerated": "AI insight generated successfully",
+      "coachingProvided": "AI coaching provided successfully",
+      "recommendationGenerated": "Recommendation generated successfully"
+    },
+    "error": {
+      "generationFailed": "Failed to generate AI content",
+      "serviceUnavailable": "AI service temporarily unavailable",
+      "invalidRequest": "Invalid AI request",
+      "rateLimitExceeded": "Rate limit exceeded"
+    },
+    "validation": {
+      "promptRequired": "Prompt is required",
+      "promptMaxLength": "Prompt must be no more than 1000 characters",
+      "contextMaxLength": "Context must be no more than 2000 characters"
+    }
+  },
+  "analytics": {
+    "success": {
+      "reportGenerated": "Analytics report generated successfully",
+      "dataExported": "Data exported successfully"
+    },
+    "error": {
+      "reportGenerationFailed": "Failed to generate report",
+      "dataExportFailed": "Failed to export data",
+      "insufficientData": "Insufficient data for analysis"
+    },
+    "validation": {
+      "startDateRequired": "Start date is required",
+      "endDateRequired": "End date is required",
+      "endDateAfterStart": "End date must be after start date",
+      "periodRequired": "Period is required",
+      "invalidPeriod": "Invalid period format"
+    }
+  },
+  "file": {
+    "success": {
+      "uploaded": "File uploaded successfully",
+      "deleted": "File deleted successfully"
+    },
+    "error": {
+      "uploadFailed": "File upload failed",
+      "deleteFailed": "File deletion failed",
+      "invalidFormat": "Invalid file format",
+      "fileTooLarge": "File too large",
+      "quotaExceeded": "Storage quota exceeded"
+    },
+    "validation": {
+      "fileRequired": "File is required",
+      "maxSize": "File size must be no more than {max} MB",
+      "allowedFormats": "Only {formats} files are allowed"
+    }
+  },
+  "search": {
+    "success": {
+      "resultsFound": "{count} results found"
+    },
+    "error": {
+      "searchFailed": "Search failed",
+      "invalidQuery": "Invalid search query"
+    },
+    "validation": {
+      "queryRequired": "Search query is required",
+      "queryMinLength": "Search query must be at least 2 characters",
+      "queryMaxLength": "Search query must be no more than 100 characters"
+    }
+  },
+  "export": {
+    "success": {
+      "dataExported": "Data exported successfully",
+      "backupCreated": "Backup created successfully"
+    },
+    "error": {
+      "exportFailed": "Export failed",
+      "backupFailed": "Backup creation failed",
+      "noDataToExport": "No data to export"
+    },
+    "validation": {
+      "formatRequired": "Export format is required",
+      "invalidFormat": "Invalid export format",
+      "dateRangeRequired": "Date range is required"
+    }
+  },
+  "import": {
+    "success": {
+      "dataImported": "Data imported successfully",
+      "backupRestored": "Backup restored successfully"
+    },
+    "error": {
+      "importFailed": "Import failed",
+      "backupRestoreFailed": "Backup restoration failed",
+      "invalidFile": "Invalid import file",
+      "dataConflict": "Data conflict detected"
+    },
+    "validation": {
+      "fileRequired": "Import file is required",
+      "fileSize": "File size must be no more than {max} MB",
+      "fileFormat": "File must be in {format} format"
+    }
+  }
+}

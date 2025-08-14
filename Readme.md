@@ -246,11 +246,91 @@ Open [**http://localhost:3000**](http://localhost:3000) to view your app.
 - **Real-time Notifications** - Push notification backend integration, notification management, and user preferences
 - **Community Features** - Shared gardens, group challenges, and collaborative habit building
 - **Mobile App** - React Native mobile application with native performance and offline support
+- **Advanced Goal Setting** - SMART goals with progress tracking, milestones, and analytics
+- **Multi-language Support** - Internationalization (i18n) with 10+ languages, RTL support, and automatic language detection
 
-  ### 📋 **Planned Features**
-  - **Advanced Goal Setting** - SMART goals with progress tracking
-  - **Social Features** - Friend connections and habit sharing
-  - **Export/Import** - Data portability and backup systems
+### 📋 **Planned Features**
+
+- **Social Features** - Friend connections and habit sharing
+- **Export/Import** - Data portability and backup systems
+
+---
+
+## 🌍 Multi-language Support (i18n)
+
+### **Frontend Internationalization**
+
+- **Nuxt i18n Module** - Seamless integration with Vue 3 and Nuxt 3
+- **10+ Languages** - English, Spanish, French, German, Portuguese, Italian, Japanese, Korean, Chinese, Arabic
+- **RTL Support** - Full right-to-left language support for Arabic
+- **Automatic Detection** - Browser language detection with fallback
+- **Language Switcher** - Beautiful dropdown component with flags and native names
+- **Persistent Preferences** - Language choice saved in localStorage
+- **Composable Utilities** - `useI18nUtils` for easy translation management
+
+### **Backend Internationalization**
+
+- **NestJS i18n Module** - Server-side internationalization support
+- **Localized Responses** - API responses in user's preferred language
+- **Validation Messages** - Localized error and validation messages
+- **Language Detection** - Automatic language detection from headers, cookies, and query params
+- **Translation Files** - JSON-based translation management
+- **Interceptor & Filters** - Automatic language handling for all API endpoints
+
+### **Supported Languages**
+
+| Language   | Code | Flag | Native Name | RTL |
+| ---------- | ---- | ---- | ----------- | --- |
+| English    | `en` | 🇺🇸   | English     | No  |
+| Spanish    | `es` | 🇪🇸   | Español     | No  |
+| French     | `fr` | 🇫🇷   | Français    | No  |
+| German     | `de` | 🇩🇪   | Deutsch     | No  |
+| Portuguese | `pt` | 🇧🇷   | Português   | No  |
+| Italian    | `it` | 🇮🇹   | Italiano    | No  |
+| Japanese   | `ja` | 🇯🇵   | 日本語      | No  |
+| Korean     | `ko` | 🇰🇷   | 한국어      | No  |
+| Chinese    | `zh` | 🇨🇳   | 中文        | No  |
+| Arabic     | `ar` | 🇸🇦   | العربية     | Yes |
+
+### **Features**
+
+- **Automatic Language Detection** - Detects user's preferred language from browser settings
+- **URL-based Language Switching** - Language-specific URLs (e.g., `/es/settings`, `/fr/garden`)
+- **Localized Content** - All UI text, error messages, and API responses in user's language
+- **RTL Layout Support** - Automatic text direction switching for Arabic
+- **Number & Date Formatting** - Locale-specific formatting for numbers, dates, and currencies
+- **Pluralization Rules** - Language-specific plural forms
+- **Fallback System** - Graceful fallback to English for missing translations
+- **Translation Management** - Easy-to-maintain JSON translation files
+- **Performance Optimized** - Lazy loading of translation files
+
+### **Usage Examples**
+
+```vue
+<!-- Basic translation -->
+<h1>{{ $t('app.name') }}</h1>
+
+<!-- Translation with parameters -->
+<p>{{ $t('garden.greeting', { name: userName }) }}</p>
+
+<!-- Pluralization -->
+<span>{{ $tc('common.units.day', count) }}</span>
+
+<!-- Date formatting -->
+<span>{{ $d(date, 'long') }}</span>
+
+<!-- Number formatting -->
+<span>{{ $n(value, 'currency') }}</span>
+```
+
+```typescript
+// Using the i18n composable
+const { getText, formatDate, isRTL } = useI18nUtils();
+
+const message = getText('common.messages.success');
+const formattedDate = formatDate(new Date(), 'short');
+const isRightToLeft = isRTL.value;
+```
 
 ---
 
@@ -349,7 +429,9 @@ Available in `/docs`:
 - **v1.1** – Community gardens & group challenges.
 - **v1.2** – Expanded AI coaching with voice tips.
 - **v1.3** – React Native mobile app with offline support and push notifications.
-- **v2.0** – Multi-language support, wearable integrations, and advanced AI features.
+- **v1.4** – Advanced goal setting with SMART goals, progress tracking, and analytics.
+- **v1.5** – Multi-language support with 10+ languages, RTL support, and automatic language detection.
+- **v2.0** – Wearable integrations, advanced AI features, and social features.
 
 ---
 

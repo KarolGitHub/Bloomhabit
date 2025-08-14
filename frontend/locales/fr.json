@@ -1,0 +1,360 @@
+{
+  "app": {
+    "name": "Bloomhabit",
+    "tagline": "Cultivez Votre Meilleur Soi",
+    "description": "Transformez vos habitudes en un beau jardin. Regardez-les fleurir avec constance et se faner doucement quand elles sont négligées."
+  },
+  "navigation": {
+    "home": "Accueil",
+    "garden": "Jardin",
+    "habits": "Habitudes",
+    "analytics": "Analyses",
+    "community": "Communauté",
+    "profile": "Profil",
+    "settings": "Paramètres",
+    "logout": "Déconnexion",
+    "login": "Connexion",
+    "register": "S'inscrire"
+  },
+  "auth": {
+    "login": "Se connecter",
+    "register": "S'inscrire",
+    "email": "Email",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "forgotPassword": "Mot de passe oublié ?",
+    "resetPassword": "Réinitialiser le mot de passe",
+    "sendResetLink": "Envoyer le lien de réinitialisation",
+    "backToLogin": "Retour à la connexion",
+    "dontHaveAccount": "Vous n'avez pas de compte ?",
+    "alreadyHaveAccount": "Vous avez déjà un compte ?",
+    "signUp": "S'inscrire",
+    "signIn": "Se connecter",
+    "logout": "Se déconnecter",
+    "loginSuccess": "Connexion réussie !",
+    "registerSuccess": "Inscription réussie !",
+    "logoutSuccess": "Déconnexion réussie !",
+    "errors": {
+      "invalidCredentials": "Email ou mot de passe invalide",
+      "emailRequired": "L'email est requis",
+      "passwordRequired": "Le mot de passe est requis",
+      "passwordMinLength": "Le mot de passe doit contenir au moins 8 caractères",
+      "passwordsDontMatch": "Les mots de passe ne correspondent pas",
+      "emailInvalid": "Veuillez entrer une adresse email valide",
+      "userExists": "L'utilisateur existe déjà",
+      "userNotFound": "Utilisateur non trouvé"
+    }
+  },
+  "garden": {
+    "title": "Votre Jardin d'Habitudes",
+    "greeting": "Bon retour, {name} !",
+    "stats": {
+      "totalHabits": "Total des Habitudes",
+      "completedToday": "Terminées Aujourd'hui",
+      "currentStreak": "Série Actuelle",
+      "completionRate": "Taux de Réussite"
+    },
+    "empty": {
+      "title": "Votre jardin est vide",
+      "description": "Commencez à planter des habitudes pour voir votre jardin grandir !",
+      "action": "Créez Votre Première Habitude"
+    },
+    "habit": {
+      "streak": "Jours de Série",
+      "days": "jours",
+      "category": "Catégorie",
+      "progress": "Progrès",
+      "tags": "Tags",
+      "actions": {
+        "complete": "Terminer",
+        "skip": "Passer",
+        "edit": "Modifier",
+        "delete": "Supprimer",
+        "viewDetails": "Voir les Détails"
+      }
+    }
+  },
+  "habits": {
+    "title": "Habitudes",
+    "create": "Créer une Habitude",
+    "edit": "Modifier l'Habitude",
+    "delete": "Supprimer l'Habitude",
+    "form": {
+      "name": "Nom de l'Habitude",
+      "description": "Description",
+      "category": "Catégorie",
+      "frequency": "Fréquence",
+      "target": "Objectif Quotidien",
+      "reminder": "Heure du Rappel",
+      "tags": "Tags",
+      "color": "Couleur",
+      "icon": "Icône",
+      "submit": "Créer l'Habitude",
+      "update": "Mettre à Jour",
+      "cancel": "Annuler"
+    },
+    "categories": {
+      "health": "Santé et Fitness",
+      "productivity": "Productivité",
+      "learning": "Apprentissage et Croissance",
+      "relationships": "Relations",
+      "finance": "Finances",
+      "creativity": "Créativité",
+      "mindfulness": "Pleine Conscience",
+      "other": "Autres"
+    },
+    "frequencies": {
+      "daily": "Quotidien",
+      "weekly": "Hebdomadaire",
+      "monthly": "Mensuel",
+      "custom": "Personnalisé"
+    },
+    "status": {
+      "active": "Actif",
+      "paused": "En Pause",
+      "completed": "Terminé",
+      "archived": "Archivé"
+    }
+  },
+  "analytics": {
+    "title": "Analyses",
+    "overview": "Vue d'ensemble",
+    "progress": "Progrès",
+    "trends": "Tendances",
+    "insights": "Perspectives",
+    "reports": "Rapports",
+    "periods": {
+      "today": "Aujourd'hui",
+      "week": "Cette Semaine",
+      "month": "Ce Mois",
+      "quarter": "Ce Trimestre",
+      "year": "Cette Année",
+      "custom": "Plage Personnalisée"
+    },
+    "metrics": {
+      "completionRate": "Taux de Réussite",
+      "streak": "Plus Longue Série",
+      "consistency": "Score de Cohérence",
+      "productivity": "Indice de Productivité",
+      "growth": "Taux de Croissance"
+    },
+    "charts": {
+      "dailyProgress": "Progrès Quotidien",
+      "weeklyTrends": "Tendances Hebdomadaires",
+      "monthlyOverview": "Vue d'ensemble Mensuelle",
+      "habitComparison": "Comparaison des Habitudes"
+    }
+  },
+  "community": {
+    "title": "Communauté",
+    "gardens": "Jardins Partagés",
+    "challenges": "Défis",
+    "members": "Membres",
+    "create": "Créer",
+    "join": "Rejoindre",
+    "leave": "Quitter",
+    "invite": "Inviter des Amis",
+    "search": "Rechercher des Communautés",
+    "empty": {
+      "title": "Pas encore de communautés",
+      "description": "Rejoignez ou créez une communauté pour vous connecter avec d'autres !",
+      "action": "Explorer les Communautés"
+    }
+  },
+  "goals": {
+    "title": "Objectifs",
+    "create": "Créer un Objectif",
+    "edit": "Modifier l'Objectif",
+    "delete": "Supprimer l'Objectif",
+    "smart": "Objectifs SMART",
+    "form": {
+      "title": "Titre de l'Objectif",
+      "description": "Description",
+      "type": "Type d'Objectif",
+      "difficulty": "Difficulté",
+      "priority": "Priorité",
+      "targetValue": "Valeur Cible",
+      "startDate": "Date de Début",
+      "targetDate": "Date Cible",
+      "milestones": "Étapes",
+      "subGoals": "Sous-objectifs",
+      "tags": "Tags",
+      "category": "Catégorie",
+      "motivation": "Motivation",
+      "obstacles": "Obstacles Potentiels",
+      "strategies": "Stratégies",
+      "notes": "Notes",
+      "submit": "Créer l'Objectif",
+      "update": "Mettre à Jour",
+      "cancel": "Annuler"
+    },
+    "types": {
+      "health": "Santé et Fitness",
+      "career": "Carrière et Professionnel",
+      "personal": "Développement Personnel",
+      "financial": "Financier",
+      "relationship": "Relations",
+      "learning": "Apprentissage et Éducation",
+      "creative": "Créatif",
+      "other": "Autres"
+    },
+    "difficulties": {
+      "easy": "Facile",
+      "medium": "Moyen",
+      "hard": "Difficile",
+      "expert": "Expert"
+    },
+    "priorities": {
+      "low": "Basse",
+      "medium": "Moyenne",
+      "high": "Haute",
+      "critical": "Critique"
+    },
+    "status": {
+      "active": "Actif",
+      "paused": "En Pause",
+      "completed": "Terminé",
+      "cancelled": "Annulé"
+    },
+    "smart": {
+      "specific": "Spécifique",
+      "measurable": "Mesurable",
+      "achievable": "Atteignable",
+      "relevant": "Pertinent",
+      "timeBound": "Limité dans le Temps"
+    }
+  },
+  "ai": {
+    "title": "Jardinier IA",
+    "insights": "Perspectives",
+    "coaching": "Coaching",
+    "suggestions": "Suggestions",
+    "tips": "Conseils Quotidiens",
+    "analysis": "Analyse des Habitudes",
+    "recommendations": "Recommandations",
+    "motivation": "Messages Motivants",
+    "loading": "L'IA réfléchit...",
+    "error": "Impossible d'obtenir des perspectives IA pour le moment"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "all": "Toutes",
+    "unread": "Non Lues",
+    "markAllRead": "Tout Marquer comme Lu",
+    "empty": "Pas encore de notifications",
+    "types": {
+      "habit": "Rappel d'Habitude",
+      "goal": "Mise à Jour d'Objectif",
+      "community": "Activité Communautaire",
+      "achievement": "Succès Débloqué",
+      "system": "Message Système"
+    }
+  },
+  "settings": {
+    "title": "Paramètres",
+    "profile": "Profil",
+    "preferences": "Préférences",
+    "notifications": "Notifications",
+    "privacy": "Confidentialité",
+    "security": "Sécurité",
+    "language": "Langue",
+    "theme": "Thème",
+    "timezone": "Fuseau Horaire",
+    "export": "Exporter les Données",
+    "import": "Importer les Données",
+    "delete": "Supprimer le Compte",
+    "themes": {
+      "light": "Clair",
+      "dark": "Sombre",
+      "system": "Système",
+      "auto": "Auto"
+    },
+    "languages": {
+      "en": "English",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch",
+      "pt": "Português",
+      "it": "Italiano",
+      "ja": "日本語",
+      "ko": "한국어",
+      "zh": "中文",
+      "ar": "العربية"
+    }
+  },
+  "common": {
+    "actions": {
+      "save": "Sauvegarder",
+      "cancel": "Annuler",
+      "delete": "Supprimer",
+      "edit": "Modifier",
+      "view": "Voir",
+      "add": "Ajouter",
+      "remove": "Supprimer",
+      "close": "Fermer",
+      "back": "Retour",
+      "next": "Suivant",
+      "previous": "Précédent",
+      "submit": "Soumettre",
+      "reset": "Réinitialiser",
+      "search": "Rechercher",
+      "filter": "Filtrer",
+      "sort": "Trier",
+      "refresh": "Actualiser",
+      "export": "Exporter",
+      "import": "Importer"
+    },
+    "status": {
+      "loading": "Chargement...",
+      "error": "Erreur",
+      "success": "Succès",
+      "warning": "Avertissement",
+      "info": "Information"
+    },
+    "time": {
+      "now": "Maintenant",
+      "today": "Aujourd'hui",
+      "yesterday": "Hier",
+      "tomorrow": "Demain",
+      "thisWeek": "Cette Semaine",
+      "lastWeek": "La Semaine Dernière",
+      "thisMonth": "Ce Mois",
+      "lastMonth": "Le Mois Dernier",
+      "thisYear": "Cette Année",
+      "lastYear": "L'Année Dernière"
+    },
+    "units": {
+      "days": "jours",
+      "weeks": "semaines",
+      "months": "mois",
+      "years": "années",
+      "hours": "heures",
+      "minutes": "minutes",
+      "seconds": "secondes"
+    },
+    "messages": {
+      "confirmDelete": "Êtes-vous sûr de vouloir supprimer cet élément ?",
+      "confirmAction": "Êtes-vous sûr de vouloir effectuer cette action ?",
+      "changesSaved": "Changements sauvegardés avec succès !",
+      "itemDeleted": "Élément supprimé avec succès !",
+      "itemCreated": "Élément créé avec succès !",
+      "itemUpdated": "Élément mis à jour avec succès !",
+      "errorOccurred": "Une erreur s'est produite. Veuillez réessayer.",
+      "networkError": "Erreur réseau. Veuillez vérifier votre connexion.",
+      "unauthorized": "Vous n'êtes pas autorisé à effectuer cette action.",
+      "notFound": "L'élément demandé n'a pas été trouvé."
+    }
+  },
+  "validation": {
+    "required": "Ce champ est requis",
+    "email": "Veuillez entrer une adresse email valide",
+    "minLength": "Doit contenir au moins {min} caractères",
+    "maxLength": "Ne doit pas contenir plus de {max} caractères",
+    "minValue": "Doit être au moins {min}",
+    "maxValue": "Ne doit pas être plus de {max}",
+    "pattern": "Veuillez entrer un format valide",
+    "unique": "Cette valeur doit être unique",
+    "passwordMatch": "Les mots de passe doivent correspondre",
+    "dateRange": "La date de fin doit être après la date de début"
+  }
+}

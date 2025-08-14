@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt'],
+  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', '@nuxtjs/i18n'],
   css: ['~/assets/scss/main.scss'],
   app: {
     head: {
@@ -75,5 +75,91 @@ export default defineNuxtConfig({
   },
   experimental: {
     payloadExtraction: false,
+  },
+  i18n: {
+    langDir: 'locales',
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
+        name: 'English',
+        file: 'en.json',
+        flag: '🇺🇸',
+      },
+      {
+        code: 'es',
+        iso: 'es-ES',
+        name: 'Español',
+        file: 'es.json',
+        flag: '🇪🇸',
+      },
+      {
+        code: 'fr',
+        iso: 'fr-FR',
+        name: 'Français',
+        file: 'fr.json',
+        flag: '🇫🇷',
+      },
+      {
+        code: 'de',
+        iso: 'de-DE',
+        name: 'Deutsch',
+        file: 'de.json',
+        flag: '🇩🇪',
+      },
+      {
+        code: 'pt',
+        iso: 'pt-BR',
+        name: 'Português',
+        file: 'pt.json',
+        flag: '🇧🇷',
+      },
+      {
+        code: 'it',
+        iso: 'it-IT',
+        name: 'Italiano',
+        file: 'it.json',
+        flag: '🇮🇹',
+      },
+      {
+        code: 'ja',
+        iso: 'ja-JP',
+        name: '日本語',
+        file: 'ja.json',
+        flag: '🇯🇵',
+      },
+      {
+        code: 'ko',
+        iso: 'ko-KR',
+        name: '한국어',
+        file: 'ko.json',
+        flag: '🇰🇷',
+      },
+      {
+        code: 'zh',
+        iso: 'zh-CN',
+        name: '中文',
+        file: 'zh.json',
+        flag: '🇨🇳',
+      },
+      {
+        code: 'ar',
+        iso: 'ar-SA',
+        name: 'العربية',
+        file: 'ar.json',
+        flag: '🇸🇦',
+        dir: 'rtl',
+      },
+    ],
+    defaultLocale: 'en',
+    strategy: 'prefix_except_default',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
+      alwaysRedirect: true,
+      fallbackLocale: 'en',
+    },
+    vueI18n: './i18n.config.ts',
   },
 });

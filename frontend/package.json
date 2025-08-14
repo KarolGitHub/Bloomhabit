@@ -12,17 +12,18 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "nuxt": "^3.8.0",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@pinia/nuxt": "^0.5.1",
+    "nuxt": "^3.8.0",
     "pinia": "^2.1.7",
     "sass": "^1.69.0",
     "sass-loader": "^13.3.0"
   },
   "dependencies": {
+    "@nuxtjs/i18n": "^10.0.5",
+    "foundation-sites": "^6.7.5",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5",
-    "foundation-sites": "^6.7.5",
     "what-input": "^5.2.12"
   }
 }

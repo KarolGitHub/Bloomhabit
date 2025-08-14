@@ -16,6 +16,7 @@ import { AnalyticsModule } from './modules/analytics/analytics.module';
 import { NotificationsModule } from './modules/notifications/notifications.module';
 import { CommunityModule } from './modules/community/community.module';
 import { GoalsModule } from './modules/goals/goals.module';
+import { I18nModule } from './modules/i18n/i18n.module';
 
 @Module({
   imports: [
@@ -30,6 +31,7 @@ import { GoalsModule } from './modules/goals/goals.module';
       useClass: JwtConfig,
     }),
     PassportModule,
+    I18nModule,
     AuthModule,
     UsersModule,
     HabitsModule,

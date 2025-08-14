@@ -1,0 +1,310 @@
+{
+  "app": {
+    "name": "Bloomhabit",
+    "description": "Plataforma de seguimiento de hábitos y desarrollo personal"
+  },
+  "common": {
+    "success": {
+      "created": "Creado exitosamente",
+      "updated": "Actualizado exitosamente",
+      "deleted": "Eliminado exitosamente",
+      "retrieved": "Recuperado exitosamente"
+    },
+    "error": {
+      "notFound": "Recurso no encontrado",
+      "badRequest": "Solicitud incorrecta",
+      "unauthorized": "No autorizado",
+      "forbidden": "Prohibido",
+      "internalError": "Error interno del servidor",
+      "validationFailed": "Validación fallida",
+      "databaseError": "Error de base de datos",
+      "networkError": "Error de red"
+    },
+    "validation": {
+      "required": "Este campo es requerido",
+      "email": "Por favor ingresa una dirección de correo válida",
+      "minLength": "Debe tener al menos {min} caracteres",
+      "maxLength": "No debe tener más de {max} caracteres",
+      "minValue": "Debe ser al menos {min}",
+      "maxValue": "No debe ser más de {max}",
+      "pattern": "Por favor ingresa un formato válido",
+      "unique": "Este valor debe ser único",
+      "passwordMatch": "Las contraseñas deben coincidir",
+      "dateRange": "La fecha de fin debe ser posterior a la fecha de inicio",
+      "invalidFormat": "Formato inválido",
+      "invalidType": "Tipo inválido",
+      "invalidValue": "Valor inválido"
+    }
+  },
+  "auth": {
+    "success": {
+      "login": "Inicio de sesión exitoso",
+      "register": "Registro exitoso",
+      "logout": "Cierre de sesión exitoso",
+      "passwordReset": "Correo de restablecimiento de contraseña enviado",
+      "passwordChanged": "Contraseña cambiada exitosamente"
+    },
+    "error": {
+      "invalidCredentials": "Correo o contraseña inválidos",
+      "userExists": "El usuario ya existe",
+      "userNotFound": "Usuario no encontrado",
+      "invalidToken": "Token inválido o expirado",
+      "insufficientPermissions": "Permisos insuficientes",
+      "accountLocked": "La cuenta está bloqueada",
+      "tooManyAttempts": "Demasiados intentos de inicio de sesión"
+    },
+    "validation": {
+      "emailRequired": "El correo electrónico es requerido",
+      "passwordRequired": "La contraseña es requerida",
+      "passwordMinLength": "La contraseña debe tener al menos 8 caracteres",
+      "passwordComplexity": "La contraseña debe contener mayúsculas, minúsculas, números y caracteres especiales",
+      "confirmPasswordMatch": "Las contraseñas deben coincidir",
+      "emailInvalid": "Por favor ingresa una dirección de correo válida"
+    }
+  },
+  "user": {
+    "success": {
+      "profileUpdated": "Perfil actualizado exitosamente",
+      "avatarUpdated": "Avatar actualizado exitosamente",
+      "preferencesUpdated": "Preferencias actualizadas exitosamente"
+    },
+    "error": {
+      "profileNotFound": "Perfil no encontrado",
+      "avatarUploadFailed": "Falló la carga del avatar",
+      "invalidAvatarFormat": "Formato de avatar inválido"
+    },
+    "validation": {
+      "firstNameRequired": "El nombre es requerido",
+      "lastNameRequired": "El apellido es requerido",
+      "firstNameMinLength": "El nombre debe tener al menos 2 caracteres",
+      "lastNameMinLength": "El apellido debe tener al menos 2 caracteres",
+      "bioMaxLength": "La biografía debe tener no más de 500 caracteres",
+      "invalidDateOfBirth": "Fecha de nacimiento inválida"
+    }
+  },
+  "habit": {
+    "success": {
+      "created": "Hábito creado exitosamente",
+      "updated": "Hábito actualizado exitosamente",
+      "deleted": "Hábito eliminado exitosamente",
+      "completed": "Hábito marcado como completado",
+      "skipped": "Hábito marcado como omitido"
+    },
+    "error": {
+      "notFound": "Hábito no encontrado",
+      "alreadyCompleted": "Hábito ya completado para hoy",
+      "cannotDeleteActive": "No se puede eliminar un hábito activo",
+      "invalidFrequency": "Configuración de frecuencia inválida"
+    },
+    "validation": {
+      "nameRequired": "El nombre del hábito es requerido",
+      "nameMinLength": "El nombre del hábito debe tener al menos 3 caracteres",
+      "nameMaxLength": "El nombre del hábito debe tener no más de 100 caracteres",
+      "descriptionMaxLength": "La descripción debe tener no más de 500 caracteres",
+      "categoryRequired": "La categoría es requerida",
+      "frequencyRequired": "La frecuencia es requerida",
+      "invalidColor": "Formato de color inválido",
+      "invalidIcon": "Icono inválido"
+    }
+  },
+  "goal": {
+    "success": {
+      "created": "Objetivo creado exitosamente",
+      "updated": "Objetivo actualizado exitosamente",
+      "deleted": "Objetivo eliminado exitosamente",
+      "completed": "Objetivo marcado como completado",
+      "paused": "Objetivo pausado exitosamente",
+      "resumed": "Objetivo reanudado exitosamente"
+    },
+    "error": {
+      "notFound": "Objetivo no encontrado",
+      "alreadyCompleted": "Objetivo ya completado",
+      "cannotPauseCompleted": "No se puede pausar un objetivo completado",
+      "cannotResumeActive": "No se puede reanudar un objetivo activo"
+    },
+    "validation": {
+      "titleRequired": "El título del objetivo es requerido",
+      "titleMinLength": "El título del objetivo debe tener al menos 5 caracteres",
+      "titleMaxLength": "El título del objetivo debe tener no más de 200 caracteres",
+      "descriptionMaxLength": "La descripción debe tener no más de 1000 caracteres",
+      "typeRequired": "El tipo de objetivo es requerido",
+      "difficultyRequired": "La dificultad es requerida",
+      "priorityRequired": "La prioridad es requerida",
+      "targetDateRequired": "La fecha objetivo es requerida",
+      "targetDateFuture": "La fecha objetivo debe estar en el futuro",
+      "startDatePast": "La fecha de inicio no puede estar en el futuro",
+      "invalidTargetValue": "Valor objetivo inválido",
+      "milestonesMaxLength": "Demasiados hitos"
+    }
+  },
+  "goalProgress": {
+    "success": {
+      "added": "Progreso agregado exitosamente",
+      "updated": "Progreso actualizado exitosamente",
+      "deleted": "Progreso eliminado exitosamente"
+    },
+    "error": {
+      "notFound": "Entrada de progreso no encontrada",
+      "goalNotFound": "Objetivo no encontrado",
+      "invalidValue": "Valor de progreso inválido",
+      "dateInFuture": "La fecha de progreso no puede estar en el futuro"
+    },
+    "validation": {
+      "valueRequired": "El valor de progreso es requerido",
+      "valuePositive": "El valor de progreso debe ser positivo",
+      "dateRequired": "La fecha es requerida",
+      "notesMaxLength": "Las notas deben tener no más de 500 caracteres"
+    }
+  },
+  "community": {
+    "success": {
+      "gardenCreated": "Jardín comunitario creado exitosamente",
+      "gardenJoined": "Unido exitosamente al jardín comunitario",
+      "gardenLeft": "Salido exitosamente del jardín comunitario",
+      "challengeCreated": "Desafío creado exitosamente",
+      "challengeJoined": "Unido exitosamente al desafío",
+      "invitationSent": "Invitación enviada exitosamente"
+    },
+    "error": {
+      "gardenNotFound": "Jardín comunitario no encontrado",
+      "challengeNotFound": "Desafío no encontrado",
+      "alreadyMember": "Ya es miembro",
+      "notMember": "No es miembro",
+      "insufficientPermissions": "Permisos insuficientes",
+      "gardenFull": "El jardín comunitario está lleno",
+      "challengeFull": "El desafío está lleno"
+    },
+    "validation": {
+      "nameRequired": "El nombre es requerido",
+      "nameMinLength": "El nombre debe tener al menos 3 caracteres",
+      "nameMaxLength": "El nombre debe tener no más de 100 caracteres",
+      "descriptionMaxLength": "La descripción debe tener no más de 1000 caracteres",
+      "maxMembersRequired": "El máximo de miembros es requerido",
+      "maxMembersRange": "El máximo de miembros debe estar entre 2 y 1000",
+      "startDateRequired": "La fecha de inicio es requerida",
+      "endDateRequired": "La fecha de fin es requerida",
+      "endDateAfterStart": "La fecha de fin debe ser posterior a la fecha de inicio"
+    }
+  },
+  "notification": {
+    "success": {
+      "sent": "Notificación enviada exitosamente",
+      "markedAsRead": "Notificación marcada como leída",
+      "deleted": "Notificación eliminada exitosamente"
+    },
+    "error": {
+      "notFound": "Notificación no encontrada",
+      "sendFailed": "Falló el envío de la notificación",
+      "invalidRecipient": "Destinatario inválido"
+    },
+    "validation": {
+      "titleRequired": "El título es requerido",
+      "titleMaxLength": "El título debe tener no más de 200 caracteres",
+      "messageRequired": "El mensaje es requerido",
+      "messageMaxLength": "El mensaje debe tener no más de 1000 caracteres",
+      "typeRequired": "El tipo es requerido",
+      "recipientRequired": "El destinatario es requerido"
+    }
+  },
+  "ai": {
+    "success": {
+      "insightGenerated": "Perspectiva de IA generada exitosamente",
+      "coachingProvided": "Entrenamiento de IA proporcionado exitosamente",
+      "recommendationGenerated": "Recomendación generada exitosamente"
+    },
+    "error": {
+      "generationFailed": "Falló la generación de contenido de IA",
+      "serviceUnavailable": "Servicio de IA temporalmente no disponible",
+      "invalidRequest": "Solicitud de IA inválida",
+      "rateLimitExceeded": "Límite de tasa excedido"
+    },
+    "validation": {
+      "promptRequired": "El prompt es requerido",
+      "promptMaxLength": "El prompt debe tener no más de 1000 caracteres",
+      "contextMaxLength": "El contexto debe tener no más de 2000 caracteres"
+    }
+  },
+  "analytics": {
+    "success": {
+      "reportGenerated": "Reporte de análisis generado exitosamente",
+      "dataExported": "Datos exportados exitosamente"
+    },
+    "error": {
+      "reportGenerationFailed": "Falló la generación del reporte",
+      "dataExportFailed": "Falló la exportación de datos",
+      "insufficientData": "Datos insuficientes para el análisis"
+    },
+    "validation": {
+      "startDateRequired": "La fecha de inicio es requerida",
+      "endDateRequired": "La fecha de fin es requerida",
+      "endDateAfterStart": "La fecha de fin debe ser posterior a la fecha de inicio",
+      "periodRequired": "El período es requerido",
+      "invalidPeriod": "Formato de período inválido"
+    }
+  },
+  "file": {
+    "success": {
+      "uploaded": "Archivo cargado exitosamente",
+      "deleted": "Archivo eliminado exitosamente"
+    },
+    "error": {
+      "uploadFailed": "Falló la carga del archivo",
+      "deleteFailed": "Falló la eliminación del archivo",
+      "invalidFormat": "Formato de archivo inválido",
+      "fileTooLarge": "Archivo demasiado grande",
+      "quotaExceeded": "Cuota de almacenamiento excedida"
+    },
+    "validation": {
+      "fileRequired": "El archivo es requerido",
+      "maxSize": "El tamaño del archivo debe ser no más de {max} MB",
+      "allowedFormats": "Solo se permiten archivos {formats}"
+    }
+  },
+  "search": {
+    "success": {
+      "resultsFound": "{count} resultados encontrados"
+    },
+    "error": {
+      "searchFailed": "La búsqueda falló",
+      "invalidQuery": "Consulta de búsqueda inválida"
+    },
+    "validation": {
+      "queryRequired": "La consulta de búsqueda es requerida",
+      "queryMinLength": "La consulta de búsqueda debe tener al menos 2 caracteres",
+      "queryMaxLength": "La consulta de búsqueda debe tener no más de 100 caracteres"
+    }
+  },
+  "export": {
+    "success": {
+      "dataExported": "Datos exportados exitosamente",
+      "backupCreated": "Respaldo creado exitosamente"
+    },
+    "error": {
+      "exportFailed": "La exportación falló",
+      "backupFailed": "La creación del respaldo falló",
+      "noDataToExport": "No hay datos para exportar"
+    },
+    "validation": {
+      "formatRequired": "El formato de exportación es requerido",
+      "invalidFormat": "Formato de exportación inválido",
+      "dateRangeRequired": "El rango de fechas es requerido"
+    }
+  },
+  "import": {
+    "success": {
+      "dataImported": "Datos importados exitosamente",
+      "backupRestored": "Respaldo restaurado exitosamente"
+    },
+    "error": {
+      "importFailed": "La importación falló",
+      "backupRestoreFailed": "La restauración del respaldo falló",
+      "invalidFile": "Archivo de importación inválido",
+      "dataConflict": "Conflicto de datos detectado"
+    },
+    "validation": {
+      "fileRequired": "El archivo de importación es requerido",
+      "fileSize": "El tamaño del archivo debe ser no más de {max} MB",
+      "fileFormat": "El archivo debe estar en formato {format}"
+    }
+  }
+}
