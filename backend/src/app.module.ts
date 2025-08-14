@@ -15,6 +15,7 @@ import { AiModule } from './modules/ai/ai.module';
 import { AnalyticsModule } from './modules/analytics/analytics.module';
 import { NotificationsModule } from './modules/notifications/notifications.module';
 import { CommunityModule } from './modules/community/community.module';
+import { GoalsModule } from './modules/goals/goals.module';
 
 @Module({
   imports: [
@@ -37,6 +38,7 @@ import { CommunityModule } from './modules/community/community.module';
     AnalyticsModule,
     NotificationsModule,
     CommunityModule,
+    GoalsModule,
   ],
   controllers: [AppController],
   providers: [AppService],

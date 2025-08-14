@@ -1,7 +1,11 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository, LessThanOrEqual } from 'typeorm';
-import { Notification, NotificationType, NotificationStatus } from './notification.entity';
+import {
+  Notification,
+  NotificationType,
+  NotificationStatus,
+} from './notification.entity';
 import { PushSubscription } from './push-subscription.entity';
 import { CreateNotificationDto } from './dto/create-notification.dto';
 import { UpdateNotificationDto } from './dto/update-notification.dto';
@@ -16,19 +20,20 @@ export class NotificationsService {
     private notificationsRepository: Repository<Notification>,
     @InjectRepository(PushSubscription)
     private pushSubscriptionsRepository: Repository<PushSubscription>,
-    private pushService: PushService,
+    private pushService: PushService
   ) {}
 
   async create(
     userId: number,
-    createNotificationDto: CreateNotificationDto,
+    createNotificationDto: CreateNotificationDto
   ): Promise<Notification> {
     const notification = this.notificationsRepository.create({
       ...createNotificationDto,
       userId,
     });
 
-    const savedNotification = await this.notificationsRepository.save(notification);
+    const savedNotification =
+      await this.notificationsRepository.save(notification);
 
     // Send notification immediately if not scheduled
     if (!createNotificationDto.scheduledFor) {
@@ -61,7 +66,7 @@ export class NotificationsService {
   async update(
     id: number,
     userId: number,
-    updateNotificationDto: UpdateNotificationDto,
+    updateNotificationDto: UpdateNotificationDto
   ): Promise<Notification> {
     const notification = await this.findOne(id, userId);
     if (!notification) {
@@ -85,7 +90,7 @@ export class NotificationsService {
   async markAllAsRead(userId: number): Promise<void> {
     await this.notificationsRepository.update(
       { userId, status: NotificationStatus.UNREAD },
-      { status: NotificationStatus.READ },
+      { status: NotificationStatus.READ }
     );
   }
 
@@ -119,13 +124,17 @@ export class NotificationsService {
     }
   }
 
-  private async sendInAppNotification(notification: Notification): Promise<void> {
+  private async sendInAppNotification(
+    notification: Notification
+  ): Promise<void> {
     // In-app notifications are handled by the frontend
     // This method can be extended for real-time updates via WebSockets
     this.logger.log(`In-app notification sent: ${notification.title}`);
   }
 
-  private async sendPushNotification(notification: Notification): Promise<void> {
+  private async sendPushNotification(
+    notification: Notification
+  ): Promise<void> {
     const subscriptions = await this.pushSubscriptionsRepository.find({
       where: { userId: notification.userId, isActive: true },
     });
@@ -135,7 +144,7 @@ export class NotificationsService {
         await this.pushService.sendPushNotification(subscription, notification);
       } catch (error) {
         this.logger.error(
-          `Failed to send push notification to subscription ${subscription.id}: ${error.message}`,
+          `Failed to send push notification to subscription ${subscription.id}: ${error.message}`
         );
       }
     }
@@ -144,7 +153,7 @@ export class NotificationsService {
   async sendHabitReminder(
     userId: number,
     habitTitle: string,
-    scheduledTime: Date,
+    scheduledTime: Date
   ): Promise<void> {
     await this.create(userId, {
       type: NotificationType.HABIT_REMINDER,
@@ -159,7 +168,7 @@ export class NotificationsService {
   async sendStreakMilestone(
     userId: number,
     habitTitle: string,
-    streakCount: number,
+    streakCount: number
   ): Promise<void> {
     await this.create(userId, {
       type: NotificationType.STREAK_MILESTONE,
@@ -173,7 +182,7 @@ export class NotificationsService {
   async sendGoalAchievement(
     userId: number,
     goalTitle: string,
-    achievement: string,
+    achievement: string
   ): Promise<void> {
     await this.create(userId, {
       type: NotificationType.GOAL_ACHIEVEMENT,
@@ -187,7 +196,7 @@ export class NotificationsService {
   async sendAiInsight(
     userId: number,
     insight: string,
-    habitTitle?: string,
+    habitTitle?: string
   ): Promise<void> {
     await this.create(userId, {
       type: NotificationType.AI_INSIGHT,
@@ -196,6 +205,104 @@ export class NotificationsService {
       data: { habitTitle, insight },
       priority: 'medium',
     });
+  }
+
+  // Goal-related notifications
+  async sendGoalCreatedNotification(userId: number, goal: any): Promise<void> {
+    const notification = await this.create({
+      userId,
+      type: 'goal_achievement',
+      title: 'New Goal Created! 🎯',
+      message: `Your goal "${goal.title}" has been created. Time to start your journey!`,
+      data: { goalId: goal.id, goalTitle: goal.title },
+      priority: 'medium',
+    });
+
+    await this.sendNotification(notification);
+  }
+
+  async sendGoalUpdatedNotification(userId: number, goal: any): Promise<void> {
+    const notification = await this.create({
+      userId,
+      type: 'goal_achievement',
+      title: 'Goal Updated ✏️',
+      message: `Your goal "${goal.title}" has been updated. Keep pushing forward!`,
+      data: { goalId: goal.id, goalTitle: goal.title },
+      priority: 'low',
+    });
+
+    await this.sendNotification(notification);
+  }
+
+  async sendGoalProgressNotification(
+    userId: number,
+    goal: any,
+    progress: any
+  ): Promise<void> {
+    const notification = await this.create({
+      userId,
+      type: 'goal_achievement',
+      title: 'Progress Made! 📈',
+      message: `Great progress on "${goal.title}"! You're ${goal.progressPercentage.toFixed(1)}% complete.`,
+      data: {
+        goalId: goal.id,
+        goalTitle: goal.title,
+        progress: progress.value,
+      },
+      priority: 'medium',
+    });
+
+    await this.sendNotification(notification);
+  }
+
+  async sendMilestoneAchievedNotification(
+    userId: number,
+    goal: any,
+    milestone: any
+  ): Promise<void> {
+    const notification = await this.create({
+      userId,
+      type: 'goal_achievement',
+      title: 'Milestone Achieved! 🏆',
+      message: `Congratulations! You've reached the "${milestone.title}" milestone in "${goal.title}"!`,
+      data: {
+        goalId: goal.id,
+        goalTitle: goal.title,
+        milestone: milestone.title,
+      },
+      priority: 'high',
+    });
+
+    await this.sendNotification(notification);
+  }
+
+  async sendGoalCompletedNotification(
+    userId: number,
+    goal: any
+  ): Promise<void> {
+    const notification = await this.create({
+      userId,
+      type: 'goal_achievement',
+      title: 'Goal Completed! 🎉',
+      message: `Amazing! You've successfully completed "${goal.title}"! Time to set your next challenge.`,
+      data: { goalId: goal.id, goalTitle: goal.title },
+      priority: 'high',
+    });
+
+    await this.sendNotification(notification);
+  }
+
+  async sendGoalReminderNotification(userId: number, goal: any): Promise<void> {
+    const notification = await this.create({
+      userId,
+      type: 'habit_reminder',
+      title: 'Goal Reminder ⏰',
+      message: `Don't forget to work on "${goal.title}" today. Every step counts!`,
+      data: { goalId: goal.id, goalTitle: goal.title },
+      priority: 'medium',
+    });
+
+    await this.sendNotification(notification);
   }
 
   async processScheduledNotifications(): Promise<void> {
