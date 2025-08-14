@@ -13,6 +13,9 @@
               <button class="button primary large rounded" @click="showCreateHabit = true">
                 <span class="mr-2">🌿</span> Plant New Habit
               </button>
+              <NuxtLink to="/habit-logger" class="button secondary large rounded">
+                <span class="mr-2">📝</span> Daily Logger
+              </NuxtLink>
               <NuxtLink to="/ai-gardener" class="button secondary large rounded">
                 <span class="mr-2">🤖</span> AI Gardener
               </NuxtLink>

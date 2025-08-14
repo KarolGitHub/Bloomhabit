@@ -46,12 +46,24 @@
     <section class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h3 class="text-3xl font-bold text-center text-gray-900 mb-16">Why Choose Bloomhabit?</h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div class="garden-card text-center">
             <div class="text-4xl mb-4">🌱</div>
             <h4 class="text-xl font-semibold mb-3">Visual Garden Metaphor</h4>
             <p class="text-gray-600">See your habits as flowers that grow and bloom with daily care, making progress
               tangible and motivating.</p>
+            <NuxtLink to="/garden" class="button primary small rounded mt-4">
+              🌺 View Garden
+            </NuxtLink>
+          </div>
+          <div class="garden-card text-center">
+            <div class="text-4xl mb-4">📊</div>
+            <h4 class="text-xl font-semibold mb-3">Daily Habit Logger</h4>
+            <p class="text-gray-600">Track your daily progress with our intuitive logging system and watch your habits
+              grow stronger.</p>
+            <NuxtLink to="/habit-logger" class="button primary small rounded mt-4">
+              📝 Start Logging
+            </NuxtLink>
           </div>
           <div class="garden-card text-center">
             <div class="text-4xl mb-4">🤖</div>
