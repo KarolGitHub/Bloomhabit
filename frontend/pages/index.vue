@@ -83,6 +83,15 @@
               ⚙️ PWA Settings
             </NuxtLink>
           </div>
+          <div class="garden-card text-center">
+            <div class="text-4xl mb-4">📊</div>
+            <h4 class="text-xl font-semibold mb-3">Advanced Analytics</h4>
+            <p class="text-gray-600">Deep insights into your habit performance with trend analysis, progress reports,
+              and personalized recommendations.</p>
+            <NuxtLink to="/analytics" class="button primary small rounded mt-4">
+              📊 View Analytics
+            </NuxtLink>
+          </div>
         </div>
       </div>
     </section>

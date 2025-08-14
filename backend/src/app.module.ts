@@ -12,6 +12,7 @@ import { UsersModule } from './modules/users/users.module';
 import { HabitsModule } from './modules/habits/habits.module';
 import { GardenModule } from './modules/garden/garden.module';
 import { AiModule } from './modules/ai/ai.module';
+import { AnalyticsModule } from './modules/analytics/analytics.module';
 
 @Module({
   imports: [
@@ -31,6 +32,7 @@ import { AiModule } from './modules/ai/ai.module';
     HabitsModule,
     GardenModule,
     AiModule,
+    AnalyticsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
