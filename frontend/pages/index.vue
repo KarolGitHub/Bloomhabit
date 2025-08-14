@@ -92,6 +92,15 @@
               📊 View Analytics
             </NuxtLink>
           </div>
+          <div class="garden-card text-center">
+            <div class="text-4xl mb-4">🔔</div>
+            <h4 class="text-xl font-semibold mb-3">Real-time Notifications</h4>
+            <p class="text-gray-600">Stay updated with push notifications, habit reminders, streak milestones, and AI
+              insights delivered in real-time.</p>
+            <NuxtLink to="/notifications" class="button primary small rounded mt-4">
+              🔔 Manage Notifications
+            </NuxtLink>
+          </div>
         </div>
       </div>
     </section>

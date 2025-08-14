@@ -216,10 +216,7 @@ Open [**http://localhost:3000**](http://localhost:3000) to view your app.
 - **Habit Logging** - Daily completion tracking, analytics, streak calculation
 - **Docker Setup** - Local development environment with PostgreSQL
 - **Advanced Analytics** - Performance metrics, progress reports, trend analysis
-
-### 🚧 **In Progress**
-
-- **Real-time Notifications** - Push notification backend integration
+- **Real-time Notifications** - Push notification backend integration, notification management, and user preferences
 
 ### 📋 **Planned Features**
 

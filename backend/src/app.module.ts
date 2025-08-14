@@ -13,6 +13,7 @@ import { HabitsModule } from './modules/habits/habits.module';
 import { GardenModule } from './modules/garden/garden.module';
 import { AiModule } from './modules/ai/ai.module';
 import { AnalyticsModule } from './modules/analytics/analytics.module';
+import { NotificationsModule } from './modules/notifications/notifications.module';
 
 @Module({
   imports: [
@@ -33,6 +34,7 @@ import { AnalyticsModule } from './modules/analytics/analytics.module';
     GardenModule,
     AiModule,
     AnalyticsModule,
+    NotificationsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
