@@ -57,6 +57,19 @@ bloomhabit/
 │ │ ├── /database # Entities & migrations
 │ │ └── app.module.ts # Root module
 │
+├── /mobile # React Native mobile application
+│ ├── /src
+│ │ ├── /components # Reusable UI components
+│ │ ├── /screens # Screen components
+│ │ ├── /navigation # Navigation configuration
+│ │ ├── /contexts # React Context providers
+│ │ ├── /services # API and external services
+│ │ ├── /types # TypeScript type definitions
+│ │ └── /constants # App constants and configuration
+│ ├── /android # Android-specific configuration
+│ ├── /ios # iOS-specific configuration
+│ └── package.json # Mobile app dependencies
+│
 ├── /docs # Project documentation
 ├── /scripts # Build & deployment scripts
 ├── .env # Environment variables
@@ -72,6 +85,7 @@ bloomhabit/
 - **Frontend (Nuxt 3 PWA):** Interactive UI, offline caching, push notifications, garden visualizations.
 - **CSS Framework:** Foundation CSS for responsive components + Tailwind CSS for utility-first styling.
 - **Backend (NestJS):** REST/GraphQL API for habits, authentication, AI features.
+- **Mobile App (React Native):** Native mobile application with offline support, push notifications, and touch-optimized interface.
 - **Database (PostgreSQL):** Stores users, habits, streaks, and journal entries.
 - **AI Service:** External AI APIs to provide personalized recommendations.
 - **FCM:** Sends reminders & motivational notifications.
@@ -131,8 +145,21 @@ bloomhabit/
    ```
 
 5. **Start the development servers**
+
    ```bash
    npm run dev
+   ```
+
+6. **Set up mobile app (optional)**
+   ```bash
+   cd mobile
+   npm install
+   # For iOS (macOS only)
+   cd ios && pod install && cd ..
+   # Start Metro bundler
+   npm start
+   # Run on device/emulator
+   npm run android  # or npm run ios
    ```
 
 ### Manual Setup
@@ -218,9 +245,9 @@ Open [**http://localhost:3000**](http://localhost:3000) to view your app.
 - **Advanced Analytics** - Performance metrics, progress reports, trend analysis
 - **Real-time Notifications** - Push notification backend integration, notification management, and user preferences
 - **Community Features** - Shared gardens, group challenges, and collaborative habit building
+- **Mobile App** - React Native mobile application with native performance and offline support
 
   ### 📋 **Planned Features**
-  - **Mobile App** - React Native or Flutter implementation
   - **Advanced Goal Setting** - SMART goals with progress tracking
   - **Social Features** - Friend connections and habit sharing
   - **Export/Import** - Data portability and backup systems
@@ -281,6 +308,12 @@ npm run dev:backend
 # Build both applications
 npm run build
 
+# Mobile App Development
+cd mobile && npm install          # Install mobile dependencies
+cd mobile && npm start            # Start Metro bundler
+cd mobile && npm run android      # Run on Android device/emulator
+cd mobile && npm run ios          # Run on iOS device/simulator (macOS only)
+
 # Database operations
 npm run db:setup
 npm run db:migrate
@@ -315,7 +348,8 @@ Available in `/docs`:
 - **v1.0** – Core habit gardening features, AI Gardener MVP, PWA, auth, and notifications.
 - **v1.1** – Community gardens & group challenges.
 - **v1.2** – Expanded AI coaching with voice tips.
-- **v2.0** – Cross-platform mobile apps, multi-language support, wearable integrations.
+- **v1.3** – React Native mobile app with offline support and push notifications.
+- **v2.0** – Multi-language support, wearable integrations, and advanced AI features.
 
 ---
 
