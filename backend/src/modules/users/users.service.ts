@@ -1,4 +1,8 @@
-import { Injectable, NotFoundException, ConflictException } from '@nestjs/common';
+import {
+  Injectable,
+  NotFoundException,
+  ConflictException,
+} from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { User, UserRole } from './entities/user.entity';
@@ -9,7 +13,7 @@ import { UpdateUserDto } from './dto/update-user.dto';
 export class UsersService {
   constructor(
     @InjectRepository(User)
-    private usersRepository: Repository<User>,
+    private usersRepository: Repository<User>
   ) {}
 
   async create(createUserDto: CreateUserDto): Promise<User> {
@@ -25,11 +29,19 @@ export class UsersService {
 
   async findAll(): Promise<User[]> {
     return this.usersRepository.find({
-      select: ['id', 'email', 'username', 'firstName', 'lastName', 'role', 'createdAt'],
+      select: [
+        'id',
+        'email',
+        'username',
+        'firstName',
+        'lastName',
+        'role',
+        'createdAt',
+      ],
     });
   }
 
-  async findOne(id: string): Promise<User> {
+  async findOne(id: number): Promise<User> {
     const user = await this.usersRepository.findOne({
       where: { id },
       relations: ['habits', 'journalEntries'],
@@ -54,7 +66,7 @@ export class UsersService {
     return this.usersRepository.findOne({ where: { githubId } });
   }
 
-  async update(id: string, updateUserDto: UpdateUserDto): Promise<User> {
+  async update(id: number, updateUserDto: UpdateUserDto): Promise<User> {
     const user = await this.findOne(id);
 
     // Check if email is being changed and if it's already taken
@@ -69,22 +81,22 @@ export class UsersService {
     return this.usersRepository.save(user);
   }
 
-  async remove(id: string): Promise<void> {
+  async remove(id: number): Promise<void> {
     const user = await this.findOne(id);
     await this.usersRepository.remove(user);
   }
 
-  async updateLastLogin(id: string): Promise<void> {
+  async updateLastLogin(id: number): Promise<void> {
     await this.usersRepository.update(id, { lastLoginAt: new Date() });
   }
 
-  async updatePreferences(id: string, preferences: any): Promise<User> {
+  async updatePreferences(id: number, preferences: any): Promise<User> {
     const user = await this.findOne(id);
     user.preferences = { ...user.preferences, ...preferences };
     return this.usersRepository.save(user);
   }
 
-  async getGardenStats(id: string): Promise<{
+  async getGardenStats(id: number): Promise<{
     totalHabits: number;
     activeHabits: number;
     bloomingHabits: number;
@@ -94,9 +106,10 @@ export class UsersService {
     const user = await this.findOne(id);
 
     const totalHabits = user.habits?.length || 0;
-    const activeHabits = user.habits?.filter(h => h.isActive).length || 0;
-    const bloomingHabits = user.habits?.filter(h => h.isBlooming).length || 0;
-    const totalStreak = user.habits?.reduce((sum, h) => sum + h.currentStreak, 0) || 0;
+    const activeHabits = user.habits?.filter((h) => h.isActive).length || 0;
+    const bloomingHabits = user.habits?.filter((h) => h.isBlooming).length || 0;
+    const totalStreak =
+      user.habits?.reduce((sum, h) => sum + h.currentStreak, 0) || 0;
     const journalEntries = user.journalEntries?.length || 0;
 
     return {

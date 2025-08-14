@@ -112,9 +112,9 @@ export class HabitsController {
   })
   getHabitLogs(
     @Param('id') id: string,
+    @Req() req: Request,
     @Query('startDate') startDate?: string,
-    @Query('endDate') endDate?: string,
-    @Req() req: Request
+    @Query('endDate') endDate?: string
   ) {
     return this.habitsService.getHabitLogs(
       +id,

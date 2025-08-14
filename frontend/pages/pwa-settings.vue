@@ -75,6 +75,84 @@
         </div>
       </section>
 
+      <!-- PWA Assets Status -->
+      <section class="pwa-assets">
+        <div class="grid-x grid-margin-x">
+          <div class="cell">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">🎨 PWA Assets</h3>
+            <p class="text-gray-600 mb-4">
+              Status of essential PWA assets like favicons, app icons, and screenshots.
+            </p>
+
+            <div class="assets-grid">
+              <div class="asset-item">
+                <div class="asset-icon">🖼️</div>
+                <div class="asset-info">
+                  <h4 class="font-semibold">Favicons</h4>
+                  <p class="text-sm text-gray-600">Essential browser icons</p>
+                  <div class="asset-status">
+                    <span class="status-badge success">✅ SVG</span>
+                    <span class="status-badge warning">⚠️ PNG (Placeholder)</span>
+                    <span class="status-badge warning">⚠️ ICO (Placeholder)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="asset-item">
+                <div class="asset-icon">📱</div>
+                <div class="asset-info">
+                  <h4 class="font-semibold">App Icons</h4>
+                  <p class="text-sm text-gray-600">Installation and home screen icons</p>
+                  <div class="asset-status">
+                    <span class="status-badge warning">⚠️ 192x192 (Placeholder)</span>
+                    <span class="status-badge warning">⚠️ 512x512 (Placeholder)</span>
+                    <span class="status-badge warning">⚠️ 180x180 (Placeholder)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="asset-item">
+                <div class="asset-icon">📸</div>
+                <div class="asset-info">
+                  <h4 class="font-semibold">Screenshots</h4>
+                  <p class="text-sm text-gray-600">PWA installation previews</p>
+                  <div class="asset-status">
+                    <span class="status-badge warning">⚠️ Desktop (Placeholder)</span>
+                    <span class="status-badge warning">⚠️ Mobile (Placeholder)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="asset-item">
+                <div class="asset-icon">⚙️</div>
+                <div class="asset-info">
+                  <h4 class="font-semibold">Configuration</h4>
+                  <p class="text-sm text-gray-600">PWA manifest and settings</p>
+                  <div class="asset-status">
+                    <span class="status-badge success">✅ Webmanifest</span>
+                    <span class="status-badge success">✅ Service Worker</span>
+                    <span class="status-badge success">✅ Meta Tags</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="callout warning mt-4">
+              <h5 class="font-semibold">⚠️ Action Required</h5>
+              <p class="mb-2">
+                Some PWA assets are currently placeholders. To complete the PWA setup, you need to:
+              </p>
+              <ul class="list-disc list-inside text-sm">
+                <li>Replace placeholder PNG files with actual designed icons</li>
+                <li>Create high-quality screenshots of the app</li>
+                <li>Optimize images for web use</li>
+                <li>Test PWA installation on various devices</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Installation Section -->
       <section class="installation-section">
         <div class="grid-x grid-margin-x">
@@ -371,8 +449,7 @@ const lastCleanup = ref('Never')
 // Methods
 const checkPWAStatus = async () => {
   // Check if PWA is installed
-  pwaStatus.value.installed = window.matchMedia('(display-mode: standalone)').matches ||
-    (window.navigator as any).standalone === true
+  pwaStatus.value.installed = window.matchMedia('(display-mode: standalone)').matches
 
   // Check service worker
   pwaStatus.value.serviceWorker = 'serviceWorker' in navigator
@@ -438,7 +515,7 @@ const subscribeToPushNotifications = async () => {
   }
 }
 
-const sendSubscriptionToServer = async (subscription: PushSubscription) => {
+const sendSubscriptionToServer = async (subscription) => {
   try {
     const response = await fetch('/api/push/subscribe', {
       method: 'POST',
@@ -570,7 +647,7 @@ const exportData = () => {
   URL.revokeObjectURL(url)
 }
 
-const formatBytes = (bytes: number): string => {
+const formatBytes = (bytes) => {
   if (bytes === 0) return '0 Bytes'
   const k = 1024
   const sizes = ['Bytes', 'KB', 'MB', 'GB']
@@ -658,6 +735,83 @@ onUnmounted(() => {
 
 .status-value {
   font-weight: 600;
+}
+
+.pwa-assets {
+  margin-bottom: 3rem;
+}
+
+.assets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.asset-item {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.asset-icon {
+  font-size: 2.5rem;
+  color: #22c55e;
+  /* Green for success */
+}
+
+.asset-info h4 {
+  margin-bottom: 0.5rem;
+}
+
+.asset-status {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.status-badge {
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+}
+
+.status-badge.success {
+  background-color: #22c55e;
+}
+
+.status-badge.warning {
+  background-color: #f59e0b;
+}
+
+.callout.warning {
+  background-color: #fef3c7;
+  border-left-color: #f59e0b;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+.callout.warning h5 {
+  margin-bottom: 0.5rem;
+}
+
+.callout.warning p {
+  margin-bottom: 0.75rem;
+}
+
+.callout.warning ul {
+  margin-left: 1.5rem;
+}
+
+.callout.warning li {
+  margin-bottom: 0.25rem;
 }
 
 .installation-section,

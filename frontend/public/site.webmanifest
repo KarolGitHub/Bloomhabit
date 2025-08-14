@@ -1,16 +1,28 @@
 {
-  "name": "Bloomhabit - Grow Your Best Self",
+  "name": "Bloomhabit - Grow Your Habits Like a Garden",
   "short_name": "Bloomhabit",
-  "description": "Transform your habits into a beautiful garden. Watch them bloom with consistency and gently wilt when neglected.",
+  "description": "Transform your habits into a beautiful garden. Track, nurture, and watch your daily routines bloom with our AI-powered habit tracker.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f0f9ff",
+  "background_color": "#ffffff",
   "theme_color": "#22c55e",
   "orientation": "portrait-primary",
   "scope": "/",
   "lang": "en",
   "categories": ["productivity", "health", "lifestyle"],
   "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
     {
       "src": "/android-chrome-192x192.png",
       "sizes": "192x192",
@@ -26,57 +38,70 @@
     {
       "src": "/apple-touch-icon.png",
       "sizes": "180x180",
-      "type": "image/png"
-    },
-    {
-      "src": "/favicon-32x32.png",
-      "sizes": "32x32",
-      "type": "image/png"
-    },
-    {
-      "src": "/favicon-16x16.png",
-      "sizes": "16x16",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     }
   ],
   "shortcuts": [
     {
-      "name": "My Garden",
-      "short_name": "Garden",
-      "description": "View your habit garden",
-      "url": "/garden",
+      "name": "Add Habit",
+      "short_name": "Add Habit",
+      "description": "Quickly add a new habit to your garden",
+      "url": "/garden?action=add",
       "icons": [
         {
-          "src": "/android-chrome-192x192.png",
-          "sizes": "192x192"
+          "src": "/favicon-32x32.png",
+          "sizes": "32x32"
+        }
+      ]
+    },
+    {
+      "name": "Daily Log",
+      "short_name": "Daily Log",
+      "description": "Log your habits for today",
+      "url": "/habit-logger",
+      "icons": [
+        {
+          "src": "/favicon-32x32.png",
+          "sizes": "32x32"
         }
       ]
     },
     {
       "name": "AI Gardener",
-      "short_name": "AI Coach",
-      "description": "Get personalized habit insights",
+      "short_name": "AI Gardener",
+      "description": "Get AI-powered insights and coaching",
       "url": "/ai-gardener",
       "icons": [
         {
-          "src": "/android-chrome-192x192.png",
-          "sizes": "192x192"
+          "src": "/favicon-32x32.png",
+          "sizes": "32x32"
         }
       ]
     }
   ],
   "screenshots": [
     {
-      "src": "/screenshot-wide.png",
+      "src": "/screenshots/desktop.png",
       "sizes": "1280x720",
       "type": "image/png",
-      "form_factor": "wide"
+      "form_factor": "wide",
+      "label": "Bloomhabit Desktop Dashboard"
     },
     {
-      "src": "/screenshot-narrow.png",
-      "sizes": "750x1334",
+      "src": "/screenshots/mobile.png",
+      "sizes": "390x844",
       "type": "image/png",
-      "form_factor": "narrow"
+      "form_factor": "narrow",
+      "label": "Bloomhabit Mobile Garden View"
     }
-  ]
+  ],
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "handle_links": "preferred",
+  "prefer_related_applications": false
 }

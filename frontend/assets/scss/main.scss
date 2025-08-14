@@ -21,7 +21,6 @@
 @include foundation-drilldown-menu;
 @include foundation-dropdown;
 @include foundation-dropdown-menu;
-@include foundation-flex-video;
 @include foundation-label;
 @include foundation-media-object;
 @include foundation-menu;
@@ -34,7 +33,6 @@
 @include foundation-reveal;
 @include foundation-slider;
 @include foundation-sticky;
-@include foundation-reveal;
 @include foundation-switch;
 @include foundation-table;
 @include foundation-tabs;
@@ -112,23 +110,10 @@ $alert-color: $bloomhabit-error;
 @layer components {
   .garden-card {
     @apply bg-white rounded-xl shadow-lg border border-green-100 p-6 hover:shadow-xl transition-all duration-300;
-
-    // Foundation grid integration
-    &.foundation-grid {
-      @extend .grid-container;
-    }
   }
 
   .flower-button {
     @apply bg-gradient-to-r from-green-400 to-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:from-green-500 hover:to-blue-600 transition-all duration-200 transform hover:scale-105;
-
-    // Foundation button enhancement
-    &.foundation-enhanced {
-      @extend .button;
-      @extend .primary;
-      @extend .large;
-      @extend .rounded;
-    }
   }
 
   .habit-flower {
@@ -145,19 +130,6 @@ $alert-color: $bloomhabit-error;
     &.wilting {
       @apply bg-gradient-to-br from-yellow-400 to-orange-400 text-white;
     }
-  }
-
-  // Foundation-enhanced components
-  .foundation-grid {
-    @extend .grid-container;
-  }
-
-  .foundation-flex {
-    @extend .flex-container;
-  }
-
-  .foundation-responsive {
-    @extend .responsive-embed;
   }
 }
 
@@ -229,10 +201,10 @@ $alert-color: $bloomhabit-error;
 
 // Custom Foundation form styling
 .form-input {
-  @extend .input;
   border: 2px solid #e5e7eb;
   border-radius: 0.5rem;
   transition: border-color 0.2s ease;
+  padding: 0.75rem;
 
   &:focus {
     border-color: $bloomhabit-primary;
@@ -241,9 +213,10 @@ $alert-color: $bloomhabit-error;
 }
 
 .form-label {
-  @extend .label;
   font-weight: 600;
   color: #374151;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
 }
 
 // Foundation callout enhancements

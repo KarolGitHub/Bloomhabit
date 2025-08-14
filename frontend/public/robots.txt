@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://bloomhabit.app/sitemap.xml
+
+# Disallow admin and API routes
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_nuxt/
+Disallow: /sw.js
+
+# Allow important pages
+Allow: /garden
+Allow: /ai-gardener
+Allow: /habit-logger
+Allow: /pwa-settings

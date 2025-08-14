@@ -17,10 +17,20 @@ $warning-color: #fbbf24;
 $alert-color: #ef4444;
 
 // Typography
-$header-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-  Roboto, sans-serif;
-$body-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-  Roboto, sans-serif;
+$header-font-family:
+  'Inter',
+  -apple-system,
+  BlinkMacSystemFont,
+  'Segoe UI',
+  Roboto,
+  sans-serif;
+$body-font-family:
+  'Inter',
+  -apple-system,
+  BlinkMacSystemFont,
+  'Segoe UI',
+  Roboto,
+  sans-serif;
 $header-font-weight: 600;
 $header-lineheight: 1.2;
 $header-margin-bottom: 1rem;
@@ -101,7 +111,9 @@ $input-border-focus: 2px solid $primary-color;
 $input-shadow: none;
 $input-shadow-focus: 0 0 0 3px rgba($primary-color, 0.1);
 $input-radius: $global-radius;
-$input-transition: border-color 0.2s ease, box-shadow 0.2s ease;
+$input-transition:
+  border-color 0.2s ease,
+  box-shadow 0.2s ease;
 
 // Callouts
 $callout-padding: 1rem;
