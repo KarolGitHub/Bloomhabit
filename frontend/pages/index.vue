@@ -101,6 +101,15 @@
               🔔 Manage Notifications
             </NuxtLink>
           </div>
+          <div class="garden-card text-center">
+            <div class="text-4xl mb-4">🌱</div>
+            <h4 class="text-xl font-semibold mb-3">Community Gardens</h4>
+            <p class="text-gray-600">Join shared gardens, participate in group challenges, and grow habits together with
+              friends and fellow enthusiasts.</p>
+            <NuxtLink to="/community" class="button primary small rounded mt-4">
+              🌱 Join Community
+            </NuxtLink>
+          </div>
         </div>
       </div>
     </section>

@@ -217,14 +217,13 @@ Open [**http://localhost:3000**](http://localhost:3000) to view your app.
 - **Docker Setup** - Local development environment with PostgreSQL
 - **Advanced Analytics** - Performance metrics, progress reports, trend analysis
 - **Real-time Notifications** - Push notification backend integration, notification management, and user preferences
+- **Community Features** - Shared gardens, group challenges, and collaborative habit building
 
-### 📋 **Planned Features**
-
-- **Community Features** - Shared gardens and group challenges
-- **Mobile App** - React Native or Flutter implementation
-- **Advanced Goal Setting** - SMART goals with progress tracking
-- **Social Features** - Friend connections and habit sharing
-- **Export/Import** - Data portability and backup systems
+  ### 📋 **Planned Features**
+  - **Mobile App** - React Native or Flutter implementation
+  - **Advanced Goal Setting** - SMART goals with progress tracking
+  - **Social Features** - Friend connections and habit sharing
+  - **Export/Import** - Data portability and backup systems
 
 ---
 
