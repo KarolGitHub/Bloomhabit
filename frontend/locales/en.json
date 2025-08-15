@@ -462,5 +462,196 @@
         "fullAccess": "Full Access"
       }
     }
+  },
+  "wearable": {
+    "page": {
+      "title": "Wearable Devices & Health Data",
+      "description": "Connect your fitness trackers, smartwatches, and health devices to automatically sync your health data and gain deeper insights into your wellness journey."
+    },
+    "tabs": {
+      "devices": "Devices",
+      "healthData": "Health Data",
+      "integrations": "Integrations",
+      "analytics": "Analytics"
+    },
+    "devices": {
+      "title": "Wearable Devices",
+      "connectNew": "Connect New Device",
+      "totalDevices": "Total Devices",
+      "connectedDevices": "Connected Devices",
+      "totalDataPoints": "Total Data Points",
+      "lastSync": "Last Sync",
+      "noDevices": "No devices connected",
+      "noDevicesDescription": "Connect your first wearable device to start tracking your health data automatically.",
+      "connectFirst": "Connect Your First Device",
+      "loading": "Loading devices...",
+      "provider": "Provider",
+      "selectProvider": "Select Provider",
+      "type": "Device Type",
+      "selectType": "Select Type",
+      "name": "Device Name",
+      "namePlaceholder": "e.g., My Fitbit Charge 5",
+      "model": "Model",
+      "modelPlaceholder": "e.g., Charge 5",
+      "capabilities": "Capabilities",
+      "status": "Status",
+      "viewStats": "View Stats",
+      "edit": "Edit",
+      "remove": "Remove",
+      "connecting": "Connecting...",
+      "connect": "Connect",
+      "confirmRemove": "Are you sure you want to remove this device?",
+      "connectModal": {
+        "title": "Connect New Device"
+      },
+      "editModal": {
+        "title": "Edit Device"
+      },
+      "types": {
+        "fitness_tracker": "Fitness Tracker",
+        "smartwatch": "Smartwatch",
+        "heart_rate_monitor": "Heart Rate Monitor",
+        "sleep_tracker": "Sleep Tracker",
+        "activity_tracker": "Activity Tracker",
+        "weight_scale": "Weight Scale",
+        "blood_pressure_monitor": "Blood Pressure Monitor",
+        "glucose_monitor": "Glucose Monitor",
+        "oxygen_saturation_monitor": "Oxygen Saturation Monitor",
+        "temperature_monitor": "Temperature Monitor"
+      },
+      "capabilities": {
+        "steps": "Steps",
+        "heart_rate": "Heart Rate",
+        "sleep": "Sleep",
+        "calories": "Calories",
+        "distance": "Distance",
+        "weight": "Weight",
+        "blood_pressure": "Blood Pressure",
+        "glucose": "Glucose",
+        "oxygen_saturation": "Oxygen Saturation",
+        "temperature": "Temperature"
+      },
+      "status": {
+        "connected": "Connected",
+        "disconnected": "Disconnected",
+        "pending": "Pending",
+        "error": "Error"
+      },
+      "messages": {
+        "connected": "Device connected successfully!",
+        "updated": "Device updated successfully!",
+        "removed": "Device removed successfully!"
+      },
+      "errors": {
+        "fetchFailed": "Failed to fetch devices",
+        "connectFailed": "Failed to connect device",
+        "updateFailed": "Failed to update device",
+        "removeFailed": "Failed to remove device",
+        "statsFailed": "Failed to fetch device stats"
+      }
+    },
+    "healthData": {
+      "title": "Health Data",
+      "allTypes": "All Types",
+      "totalDataPoints": "Total Data Points",
+      "dataTypes": "Data Types",
+      "devices": "Devices",
+      "chartTitle": "Health Data Trends",
+      "recentData": "Recent Health Data",
+      "noData": "No health data available",
+      "noDataDescription": "Connect a wearable device to start collecting health data.",
+      "loading": "Loading health data...",
+      "view": "View",
+      "process": "Process",
+      "timeRanges": {
+        "7days": "Last 7 days",
+        "30days": "Last 30 days",
+        "90days": "Last 90 days",
+        "1year": "Last year"
+      },
+      "types": {
+        "steps": "Steps",
+        "heart_rate": "Heart Rate",
+        "sleep": "Sleep",
+        "calories": "Calories",
+        "distance": "Distance",
+        "weight": "Weight"
+      },
+      "quality": {
+        "high": "High",
+        "medium": "Medium",
+        "low": "Low",
+        "unknown": "Unknown"
+      },
+      "table": {
+        "type": "Type",
+        "value": "Value",
+        "unit": "Unit",
+        "timestamp": "Timestamp",
+        "device": "Device",
+        "quality": "Quality",
+        "actions": "Actions"
+      },
+      "detailsModal": {
+        "title": "Data Details",
+        "type": "Type",
+        "value": "Value",
+        "unit": "Unit",
+        "timestamp": "Timestamp",
+        "device": "Device",
+        "quality": "Quality",
+        "metadata": "Metadata",
+        "processedData": "Processed Data"
+      },
+      "messages": {
+        "processed": "Data processed successfully!"
+      },
+      "errors": {
+        "fetchFailed": "Failed to fetch health data",
+        "processFailed": "Failed to process data"
+      }
+    },
+    "integrations": {
+      "comingSoon": "Integrations Coming Soon",
+      "comingSoonDescription": "Advanced integration management and OAuth configuration will be available in the next update."
+    },
+    "analytics": {
+      "comingSoon": "Advanced Analytics Coming Soon",
+      "comingSoonDescription": "Comprehensive health analytics and insights will be available in the next update."
+    },
+    "quickActions": {
+      "connectDevice": "Connect Device",
+      "refreshData": "Refresh Data",
+      "exportData": "Export Data"
+    },
+    "quickConnect": {
+      "title": "Quick Connect"
+    },
+    "providers": {
+      "fitbit": {
+        "description": "Connect your Fitbit device to track steps, heart rate, sleep, and more"
+      },
+      "apple_health": {
+        "description": "Connect to Apple Health to access your health and fitness data"
+      },
+      "google_fit": {
+        "description": "Connect to Google Fit to sync your fitness activities and health data"
+      },
+      "garmin": {
+        "description": "Connect your Garmin device to track activities, heart rate, and sleep"
+      },
+      "oura": {
+        "description": "Connect your Oura Ring to track sleep, recovery, and readiness"
+      }
+    },
+    "messages": {
+      "selectProvider": "Selected {provider}. Navigate to the Devices tab to complete the connection.",
+      "dataRefreshed": "Data refreshed successfully!",
+      "dataExported": "Data exported successfully!"
+    },
+    "errors": {
+      "refreshFailed": "Failed to refresh data",
+      "exportFailed": "Failed to export data"
+    }
   }
 }

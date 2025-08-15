@@ -13,6 +13,7 @@
             <NuxtLink to="/habits" class="text-gray-600 hover:text-green-600 transition-colors">Habits</NuxtLink>
             <NuxtLink to="/social" class="text-gray-600 hover:text-green-600 transition-colors">Social</NuxtLink>
             <NuxtLink to="/community" class="text-gray-600 hover:text-green-600 transition-colors">Community</NuxtLink>
+            <NuxtLink to="/wearable" class="text-gray-600 hover:text-green-600 transition-colors">Wearables</NuxtLink>
             <button class="flower-button">Sign In</button>
           </nav>
         </div>
@@ -118,6 +119,15 @@
               personal growth journey.</p>
             <NuxtLink to="/social" class="button primary small rounded mt-4">
               👥 Connect Socially
+            </NuxtLink>
+          </div>
+          <div class="garden-card text-center">
+            <div class="text-4xl mb-4">⌚</div>
+            <h4 class="text-xl font-semibold mb-3">Wearable Integration</h4>
+            <p class="text-gray-600">Connect your fitness trackers, smartwatches, and health devices to automatically sync
+              your health data and gain deeper insights.</p>
+            <NuxtLink to="/wearable" class="button primary small rounded mt-4">
+              ⌚ Connect Devices
             </NuxtLink>
           </div>
         </div>

@@ -18,6 +18,7 @@ import { CommunityModule } from './modules/community/community.module';
 import { GoalsModule } from './modules/goals/goals.module';
 import { I18nModule } from './modules/i18n/i18n.module';
 import { SocialModule } from './modules/social/social.module';
+import { WearableModule } from './modules/wearable/wearable.module';
 
 @Module({
   imports: [
@@ -43,6 +44,7 @@ import { SocialModule } from './modules/social/social.module';
     CommunityModule,
     GoalsModule,
     SocialModule,
+    WearableModule,
   ],
   controllers: [AppController],
   providers: [AppService],

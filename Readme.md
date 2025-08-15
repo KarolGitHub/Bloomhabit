@@ -249,6 +249,7 @@ Open [**http://localhost:3000**](http://localhost:3000) to view your app.
 - **Advanced Goal Setting** - SMART goals with progress tracking, milestones, and analytics
 - **Multi-language Support** - Internationalization (i18n) with 10+ languages, RTL support, and automatic language detection
 - **Social Features** - Friend connections, habit sharing, and social interactions
+- **Wearable Integrations** - Health data tracking, device management, and automatic synchronization
 
 ### 📋 **Planned Features**
 
@@ -470,7 +471,45 @@ Available in `/docs`:
 - **v1.4** – Advanced goal setting with SMART goals, progress tracking, and analytics.
 - **v1.5** – Multi-language support with 10+ languages, RTL support, and automatic language detection.
 - **v1.6** – Social features with friend connections, habit sharing, and social interactions.
-- **v2.0** – Wearable integrations and advanced AI features.
+- **v1.7** – Wearable integrations with health data tracking and device management.
+
+---
+
+## ⌚ Wearable Integrations
+
+Bloomhabit now supports comprehensive wearable device integration, allowing users to automatically sync health and fitness data from popular devices and platforms:
+
+### **Supported Devices & Platforms**
+
+- **Fitness Trackers** – Fitbit, Garmin, Withings
+- **Smartwatches** – Apple Watch, Samsung Galaxy Watch, Garmin Fenix
+- **Health Platforms** – Apple Health, Google Fit, Samsung Health
+- **Specialized Devices** – Oura Ring (sleep tracking), Peloton, Strava
+
+### **Health Data Types**
+
+- **Activity Metrics** – Steps, distance, calories, active minutes
+- **Vital Signs** – Heart rate, blood pressure, oxygen saturation
+- **Sleep Data** – Duration, quality, stages, recovery metrics
+- **Body Metrics** – Weight, body composition, temperature
+- **Custom Metrics** – User-defined health parameters
+
+### **Key Features**
+
+- **Automatic Sync** – Real-time or scheduled data synchronization
+- **Data Processing** – AI-powered insights and health recommendations
+- **Trend Analysis** – Historical data visualization and progress tracking
+- **Device Management** – Connect, configure, and monitor multiple devices
+- **Data Export** – Export health data for personal records or sharing
+
+### **Integration Benefits**
+
+- **Seamless Tracking** – No manual data entry required
+- **Comprehensive Insights** – Correlate health data with habit performance
+- **Motivation Boost** – Visual progress and achievement tracking
+- **Health Awareness** – Better understanding of wellness patterns
+- **Goal Alignment** – Connect health metrics with habit goals
+- **v2.0** – Advanced AI features and machine learning insights.
 
 ---
 
