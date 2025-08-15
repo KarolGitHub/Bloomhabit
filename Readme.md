@@ -248,10 +248,10 @@ Open [**http://localhost:3000**](http://localhost:3000) to view your app.
 - **Mobile App** - React Native mobile application with native performance and offline support
 - **Advanced Goal Setting** - SMART goals with progress tracking, milestones, and analytics
 - **Multi-language Support** - Internationalization (i18n) with 10+ languages, RTL support, and automatic language detection
+- **Social Features** - Friend connections, habit sharing, and social interactions
 
 ### 📋 **Planned Features**
 
-- **Social Features** - Friend connections and habit sharing
 - **Export/Import** - Data portability and backup systems
 
 ---
@@ -303,6 +303,44 @@ Open [**http://localhost:3000**](http://localhost:3000) to view your app.
 - **Fallback System** - Graceful fallback to English for missing translations
 - **Translation Management** - Easy-to-maintain JSON translation files
 - **Performance Optimized** - Lazy loading of translation files
+
+---
+
+## 👥 Social Features
+
+### **Friend Connections**
+
+- **Friend Requests** - Send and receive friend requests with personalized messages
+- **Friendship Types** - Categorize relationships (Friend, Family, Colleague, Mentor, Mentee)
+- **User Search** - Find users by name or username to build your network
+- **Mutual Friends** - Discover shared connections and expand your social circle
+- **Block/Unblock** - Manage unwanted connections with user blocking features
+- **Friendship Management** - Accept, reject, or remove friends with ease
+
+### **Habit Sharing**
+
+- **Permission-Based Sharing** - Control access levels (View, Comment, Support, Full Access)
+- **Personal Messages** - Add context and encouragement when sharing habits
+- **Shared Habit Dashboard** - View habits shared by friends and track their progress
+- **Support System** - Send encouragement, likes, and supportive messages
+- **Share Analytics** - Track views, interactions, and engagement on shared habits
+- **Popular Habits** - Discover trending habits shared by the community
+
+### **Social Interactions**
+
+- **Activity Feed** - Track likes, comments, support, and achievements
+- **Milestone Celebrations** - Automatically share achievements and milestones
+- **Streak Recognition** - Celebrate streak achievements with friends
+- **Goal Achievements** - Share completed goals and inspire others
+- **Social Statistics** - Monitor your social engagement and network growth
+- **Real-time Updates** - Stay connected with live activity notifications
+
+### **Community Integration**
+
+- **Seamless Integration** - Works alongside existing community gardens and challenges
+- **Cross-Platform Sharing** - Share habits between web and mobile applications
+- **Privacy Controls** - Granular control over what and with whom you share
+- **Social Analytics** - Insights into your social network and habit sharing impact
 
 ### **Usage Examples**
 
@@ -431,7 +469,8 @@ Available in `/docs`:
 - **v1.3** – React Native mobile app with offline support and push notifications.
 - **v1.4** – Advanced goal setting with SMART goals, progress tracking, and analytics.
 - **v1.5** – Multi-language support with 10+ languages, RTL support, and automatic language detection.
-- **v2.0** – Wearable integrations, advanced AI features, and social features.
+- **v1.6** – Social features with friend connections, habit sharing, and social interactions.
+- **v2.0** – Wearable integrations and advanced AI features.
 
 ---
 

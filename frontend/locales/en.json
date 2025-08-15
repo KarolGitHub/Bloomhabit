@@ -311,6 +311,13 @@
       "warning": "Warning",
       "info": "Information"
     },
+    "loading": "Loading...",
+    "sending": "Sending...",
+    "sharing": "Sharing...",
+    "updating": "Updating...",
+    "searching": "Searching...",
+    "optional": "Optional",
+    "update": "Update",
     "time": {
       "now": "Now",
       "today": "Today",
@@ -356,5 +363,104 @@
     "unique": "This value must be unique",
     "passwordMatch": "Passwords must match",
     "dateRange": "End date must be after start date"
+  },
+  "social": {
+    "title": "Social Features",
+    "description": "Connect with friends, share your habits, and build a supportive community around your personal growth journey.",
+    "pageTitle": "Social Features - Bloomhabit",
+    "pageDescription": "Connect with friends, share habits, and build a supportive community for your personal growth journey.",
+    "tabs": {
+      "friends": "Friends",
+      "sharing": "Habit Sharing",
+      "activity": "Activity Feed",
+      "stats": "Social Stats"
+    },
+    "activityFeed": {
+      "title": "Activity Feed",
+      "comingSoon": "Activity feed coming soon! Track likes, comments, and social interactions."
+    },
+    "stats": {
+      "title": "Social Statistics",
+      "comingSoon": "Social statistics and insights coming soon!"
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "addFriend": "Add Friend",
+      "shareHabit": "Share Habit",
+      "joinCommunity": "Join Community"
+    },
+    "friends": {
+      "title": "Friends",
+      "addFriend": "Add Friend",
+      "pendingRequests": "Pending Requests",
+      "yourFriends": "Your Friends",
+      "noFriendsYet": "No friends yet",
+      "startBuilding": "Start building your network by adding friends and family members",
+      "findFriends": "Find Friends",
+      "searchUsers": "Search for users",
+      "searchPlaceholder": "Enter name or username...",
+      "searchResults": "Search Results",
+      "noUsersFound": "No users found",
+      "sendRequest": "Send Request",
+      "accept": "Accept",
+      "reject": "Reject",
+      "viewProfile": "View Profile",
+      "confirmRemove": "Are you sure you want to remove this friend?",
+      "requestSent": "Friend request sent!",
+      "requestAccepted": "Friend request accepted!",
+      "requestRejected": "Friend request rejected!",
+      "friendRemoved": "Friend removed successfully",
+      "errorFetching": "Error fetching friends",
+      "errorSearching": "Error searching users",
+      "errorSendingRequest": "Error sending friend request",
+      "errorAccepting": "Error accepting friend request",
+      "errorRejecting": "Error rejecting friend request",
+      "errorRemoving": "Error removing friend",
+      "types": {
+        "friend": "Friend",
+        "family": "Family",
+        "colleague": "Colleague",
+        "mentor": "Mentor",
+        "mentee": "Mentee"
+      }
+    },
+    "habitShare": {
+      "title": "Habit Sharing",
+      "shareHabit": "Share Habit",
+      "sharedWithOthers": "Shared with Others",
+      "sharedWithMe": "Shared with Me",
+      "sharedWith": "Shared with",
+      "sharedBy": "Shared by",
+      "permission": "Permission",
+      "message": "Message",
+      "messagePlaceholder": "Add a personal message...",
+      "noSharesYet": "No habits shared yet",
+      "shareFirstHabit": "Share Your First Habit",
+      "selectHabit": "Select Habit",
+      "chooseHabit": "Choose a habit to share...",
+      "selectFriend": "Select Friend",
+      "chooseFriend": "Choose a friend to share with...",
+      "permissionLevel": "Permission Level",
+      "editShare": "Edit Share",
+      "view": "View",
+      "support": "Support",
+      "supportMessage": "Keep up the great work! 🌱",
+      "habitShared": "Habit shared successfully!",
+      "shareUpdated": "Share updated successfully!",
+      "shareRemoved": "Share removed successfully!",
+      "supportSent": "Support sent successfully!",
+      "confirmRemove": "Are you sure you want to remove this share?",
+      "errorFetching": "Error fetching habit shares",
+      "errorSharing": "Error sharing habit",
+      "errorUpdating": "Error updating share",
+      "errorRemoving": "Error removing share",
+      "errorSupporting": "Error sending support",
+      "permissions": {
+        "view": "View Only",
+        "comment": "Can Comment",
+        "support": "Can Support",
+        "fullAccess": "Full Access"
+      }
+    }
   }
 }

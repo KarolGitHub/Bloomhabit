@@ -17,6 +17,7 @@ import { NotificationsModule } from './modules/notifications/notifications.modul
 import { CommunityModule } from './modules/community/community.module';
 import { GoalsModule } from './modules/goals/goals.module';
 import { I18nModule } from './modules/i18n/i18n.module';
+import { SocialModule } from './modules/social/social.module';
 
 @Module({
   imports: [
@@ -41,6 +42,7 @@ import { I18nModule } from './modules/i18n/i18n.module';
     NotificationsModule,
     CommunityModule,
     GoalsModule,
+    SocialModule,
   ],
   controllers: [AppController],
   providers: [AppService],
