@@ -15,6 +15,7 @@
             <NuxtLink to="/community" class="text-gray-600 hover:text-green-600 transition-colors">Community</NuxtLink>
             <NuxtLink to="/wearable" class="text-gray-600 hover:text-green-600 transition-colors">Wearables</NuxtLink>
             <NuxtLink to="/garden-visualization" class="text-gray-600 hover:text-green-600 transition-colors">3D Garden</NuxtLink>
+            <NuxtLink to="/export-import" class="text-gray-600 hover:text-green-600 transition-colors">Export/Import</NuxtLink>
             <button class="flower-button">Sign In</button>
           </nav>
         </div>
@@ -137,6 +138,14 @@
             <p class="text-gray-600">Experience your habits in immersive 3D with custom themes, seasonal layouts, and interactive garden designs.</p>
             <NuxtLink to="/garden-visualization" class="button primary small rounded mt-4">
               🎨 Explore 3D Garden
+            </NuxtLink>
+          </div>
+          <div class="garden-card text-center">
+            <div class="text-4xl mb-4">📤</div>
+            <h4 class="text-xl font-semibold mb-3">Export/Import System</h4>
+            <p class="text-gray-600">Manage your data with comprehensive export/import tools, automated backups, and GDPR compliance features.</p>
+            <NuxtLink to="/export-import" class="button primary small rounded mt-4">
+              📤 Manage Data
             </NuxtLink>
           </div>
         </div>

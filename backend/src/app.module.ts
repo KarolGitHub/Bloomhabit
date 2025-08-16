@@ -21,6 +21,7 @@ import { SocialModule } from './modules/social/social.module';
 import { WearableModule } from './modules/wearable/wearable.module';
 import { GamificationModule } from './modules/gamification/gamification.module';
 import { GardenVisualizationModule } from './modules/garden-visualization/garden-visualization.module';
+import { ExportImportModule } from './modules/export-import/export-import.module';
 
 @Module({
   imports: [
@@ -49,6 +50,7 @@ import { GardenVisualizationModule } from './modules/garden-visualization/garden
     WearableModule,
     GamificationModule,
     GardenVisualizationModule,
+    ExportImportModule,
   ],
   controllers: [AppController],
   providers: [AppService],
