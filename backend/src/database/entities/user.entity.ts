@@ -8,6 +8,9 @@ import {
 } from 'typeorm';
 import { Habit } from './habit.entity';
 import { HabitLog } from './habit-log.entity';
+import { UserAchievement } from './user-achievement.entity';
+import { LeaderboardEntry } from './leaderboard-entry.entity';
+import { UserChallenge } from './user-challenge.entity';
 
 export enum UserRole {
   USER = 'user',
@@ -59,6 +62,34 @@ export class User {
   @Column({ type: 'timestamp', nullable: true })
   emailVerifiedAt: Date;
 
+  // Gamification fields
+  @Column({ type: 'int', default: 0 })
+  points: number;
+
+  @Column({ type: 'int', default: 0 })
+  level: number;
+
+  @Column({ type: 'int', default: 0 })
+  experience: number;
+
+  @Column({ type: 'int', default: 0 })
+  totalStreak: number;
+
+  @Column({ type: 'int', default: 0 })
+  currentStreak: number;
+
+  @Column({ type: 'int', default: 0 })
+  perfectDays: number;
+
+  @Column({ type: 'int', default: 0 })
+  achievementsUnlocked: number;
+
+  @Column({ type: 'text', nullable: true })
+  title: string; // Custom title earned through achievements
+
+  @Column({ type: 'text', nullable: true })
+  avatarFrame: string; // Special avatar frame earned through achievements
+
   @CreateDateColumn()
   createdAt: Date;
 
@@ -71,5 +102,16 @@ export class User {
 
   @OneToMany(() => HabitLog, (habitLog) => habitLog.user)
   habitLogs: HabitLog[];
-}
 
+  @OneToMany(() => UserAchievement, (userAchievement) => userAchievement.user)
+  userAchievements: UserAchievement[];
+
+  @OneToMany(
+    () => LeaderboardEntry,
+    (leaderboardEntry) => leaderboardEntry.user
+  )
+  leaderboardEntries: LeaderboardEntry[];
+
+  @OneToMany(() => UserChallenge, (userChallenge) => userChallenge.user)
+  userChallenges: UserChallenge[];
+}

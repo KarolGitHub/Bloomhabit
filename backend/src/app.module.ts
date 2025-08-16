@@ -19,6 +19,8 @@ import { GoalsModule } from './modules/goals/goals.module';
 import { I18nModule } from './modules/i18n/i18n.module';
 import { SocialModule } from './modules/social/social.module';
 import { WearableModule } from './modules/wearable/wearable.module';
+import { GamificationModule } from './modules/gamification/gamification.module';
+import { GardenVisualizationModule } from './modules/garden-visualization/garden-visualization.module';
 
 @Module({
   imports: [
@@ -45,6 +47,8 @@ import { WearableModule } from './modules/wearable/wearable.module';
     GoalsModule,
     SocialModule,
     WearableModule,
+    GamificationModule,
+    GardenVisualizationModule,
   ],
   controllers: [AppController],
   providers: [AppService],

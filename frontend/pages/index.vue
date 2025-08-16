@@ -14,6 +14,7 @@
             <NuxtLink to="/social" class="text-gray-600 hover:text-green-600 transition-colors">Social</NuxtLink>
             <NuxtLink to="/community" class="text-gray-600 hover:text-green-600 transition-colors">Community</NuxtLink>
             <NuxtLink to="/wearable" class="text-gray-600 hover:text-green-600 transition-colors">Wearables</NuxtLink>
+            <NuxtLink to="/garden-visualization" class="text-gray-600 hover:text-green-600 transition-colors">3D Garden</NuxtLink>
             <button class="flower-button">Sign In</button>
           </nav>
         </div>
@@ -128,6 +129,14 @@
               your health data and gain deeper insights.</p>
             <NuxtLink to="/wearable" class="button primary small rounded mt-4">
               ⌚ Connect Devices
+            </NuxtLink>
+          </div>
+          <div class="garden-card text-center">
+            <div class="text-4xl mb-4">🎨</div>
+            <h4 class="text-xl font-semibold mb-3">3D Garden Visualization</h4>
+            <p class="text-gray-600">Experience your habits in immersive 3D with custom themes, seasonal layouts, and interactive garden designs.</p>
+            <NuxtLink to="/garden-visualization" class="button primary small rounded mt-4">
+              🎨 Explore 3D Garden
             </NuxtLink>
           </div>
         </div>
