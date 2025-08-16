@@ -16,6 +16,7 @@
             <NuxtLink to="/wearable" class="text-gray-600 hover:text-green-600 transition-colors">Wearables</NuxtLink>
             <NuxtLink to="/garden-visualization" class="text-gray-600 hover:text-green-600 transition-colors">3D Garden</NuxtLink>
             <NuxtLink to="/export-import" class="text-gray-600 hover:text-green-600 transition-colors">Export/Import</NuxtLink>
+            <NuxtLink to="/enhanced-ai" class="text-gray-600 hover:text-green-600 transition-colors">Enhanced AI</NuxtLink>
             <button class="flower-button">Sign In</button>
           </nav>
         </div>
@@ -146,6 +147,14 @@
             <p class="text-gray-600">Manage your data with comprehensive export/import tools, automated backups, and GDPR compliance features.</p>
             <NuxtLink to="/export-import" class="button primary small rounded mt-4">
               📤 Manage Data
+            </NuxtLink>
+          </div>
+          <div class="garden-card text-center">
+            <div class="text-4xl mb-4">🤖</div>
+            <h4 class="text-xl font-semibold mb-3">Enhanced AI Features</h4>
+            <p class="text-gray-600">Experience the future with AI-powered natural language processing, image recognition, voice commands, and smart reminders.</p>
+            <NuxtLink to="/enhanced-ai" class="button primary small rounded mt-4">
+              🤖 Explore AI Features
             </NuxtLink>
           </div>
         </div>
