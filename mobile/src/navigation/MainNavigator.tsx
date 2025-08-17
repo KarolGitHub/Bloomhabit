@@ -20,6 +20,7 @@ import ChallengeDetailScreen from '../screens/main/ChallengeDetailScreen';
 import CreateGardenScreen from '../screens/main/CreateGardenScreen';
 import CreateChallengeScreen from '../screens/main/CreateChallengeScreen';
 import SettingsScreen from '../screens/main/SettingsScreen';
+import AdvancedMobileScreen from '../screens/main/AdvancedMobileScreen';
 
 const Tab = createBottomTabNavigator<MainTabParamList>();
 const Stack = createStackNavigator<RootStackParamList>();
@@ -116,6 +117,7 @@ const MainNavigator = () => {
       <Stack.Screen name='CreateChallenge' component={CreateChallengeScreen} />
       <Stack.Screen name='Profile' component={ProfileScreen} />
       <Stack.Screen name='Settings' component={SettingsScreen} />
+      <Stack.Screen name='AdvancedMobile' component={AdvancedMobileScreen} />
     </Stack.Navigator>
   );
 };

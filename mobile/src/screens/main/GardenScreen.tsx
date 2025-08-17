@@ -195,6 +195,47 @@ const GardenScreen = ({ navigation }: any) => {
           </Card.Content>
         </Card>
 
+        {/* Advanced Mobile Features Button */}
+        <Card
+          style={[
+            styles.advancedFeaturesCard,
+            { backgroundColor: theme.colors.surface },
+          ]}
+          onPress={() => navigation.navigate('AdvancedMobile')}
+        >
+          <Card.Content style={styles.advancedFeaturesContent}>
+            <Icon
+              name='cellphone-cog'
+              size={32}
+              color={theme.colors.primary}
+              style={styles.advancedFeaturesIcon}
+            />
+            <View style={styles.advancedFeaturesText}>
+              <Title
+                style={[
+                  styles.advancedFeaturesTitle,
+                  { color: theme.colors.text },
+                ]}
+              >
+                Advanced Mobile Features
+              </Title>
+              <Text
+                style={[
+                  styles.advancedFeaturesSubtitle,
+                  { color: theme.colors.textSecondary },
+                ]}
+              >
+                Offline Mode • Widgets • Smartwatch • Background Sync
+              </Text>
+            </View>
+            <Icon
+              name='chevron-right'
+              size={24}
+              color={theme.colors.textSecondary}
+            />
+          </Card.Content>
+        </Card>
+
         {/* Habits List */}
         <View style={styles.habitsSection}>
           <View style={styles.sectionHeader}>
@@ -526,6 +567,29 @@ const styles = StyleSheet.create({
     margin: 16,
     right: 0,
     bottom: 0,
+  },
+  advancedFeaturesCard: {
+    margin: 20,
+    marginTop: 10,
+    elevation: 2,
+  },
+  advancedFeaturesContent: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  advancedFeaturesIcon: {
+    marginRight: 15,
+  },
+  advancedFeaturesText: {
+    flex: 1,
+  },
+  advancedFeaturesTitle: {
+    fontSize: 16,
+    marginBottom: 4,
+  },
+  advancedFeaturesSubtitle: {
+    fontSize: 12,
   },
 });
 
