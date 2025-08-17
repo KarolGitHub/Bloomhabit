@@ -24,6 +24,7 @@ import { GardenVisualizationModule } from './modules/garden-visualization/garden
 import { ExportImportModule } from './modules/export-import/export-import.module';
 import { AiEnhancedModule } from './modules/ai-enhanced/ai-enhanced.module';
 import { DataPrivacyModule } from './modules/data-privacy/data-privacy.module';
+import { IntegrationEcosystemModule } from './modules/integration-ecosystem/integration-ecosystem.module';
 
 @Module({
   imports: [
@@ -55,6 +56,7 @@ import { DataPrivacyModule } from './modules/data-privacy/data-privacy.module';
     ExportImportModule,
     AiEnhancedModule,
     DataPrivacyModule,
+    IntegrationEcosystemModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -207,5 +207,44 @@
     "success": "Success",
     "warning": "Warning",
     "info": "Information"
+  },
+  "integrationEcosystem": {
+    "title": "Integration Ecosystem",
+    "description": "Connect your calendar, task managers, and smart home devices for seamless habit tracking and automation",
+    "overview": {
+      "totalIntegrations": "Total Integrations",
+      "activeIntegrations": "Active Integrations",
+      "lastSync": "Last Sync",
+      "never": "Never"
+    },
+    "tabs": {
+      "calendar": "Calendar",
+      "tasks": "Tasks",
+      "smartHome": "Smart Home"
+    },
+    "calendar": {
+      "title": "Calendar Integrations",
+      "description": "Sync your habits and goals with your calendar",
+      "addIntegration": "Add Calendar",
+      "sync": "Sync",
+      "confirmDelete": "Are you sure you want to delete this calendar integration?"
+    },
+    "tasks": {
+      "title": "Task Integrations",
+      "description": "Connect your task managers and create habits from tasks",
+      "addIntegration": "Add Task Manager",
+      "sync": "Sync",
+      "confirmDelete": "Are you sure you want to delete this task integration?"
+    },
+    "smartHome": {
+      "title": "Smart Home Integrations",
+      "description": "Automate your home based on your habits and goals",
+      "addIntegration": "Add Smart Home",
+      "sync": "Sync",
+      "active": "Active",
+      "devices": "Devices",
+      "automations": "Automations",
+      "confirmDelete": "Are you sure you want to delete this smart home integration?"
+    }
   }
 }
