@@ -98,5 +98,114 @@
     "titlePlaceholder": "Enter your custom title",
     "avatarFrame": "Avatar Frame",
     "noFrame": "No Frame"
+  },
+  "dataPrivacy": {
+    "title": "Data & Privacy",
+    "description": "Manage your privacy settings, data requests, and security monitoring",
+    "summary": {
+      "gdprStatus": "GDPR Status",
+      "securityEvents": "Security Events",
+      "dataRequests": "Data Requests",
+      "auditLogs": "Audit Logs"
+    },
+    "tabs": {
+      "privacy": "Privacy Settings",
+      "requests": "Data Requests",
+      "audit": "Audit Logs",
+      "security": "Security"
+    },
+    "privacy": {
+      "title": "Privacy Controls",
+      "dataSharing": "Data Sharing Level",
+      "dataSharingDesc": "Control how your data is shared and used",
+      "sharingLevels": {
+        "none": "No Sharing",
+        "anonymous": "Anonymous Only",
+        "aggregated": "Aggregated",
+        "personal": "Personal"
+      },
+      "consent": {
+        "analytics": "Analytics",
+        "analyticsDesc": "Allow collection of usage analytics",
+        "marketing": "Marketing",
+        "marketingDesc": "Allow marketing communications",
+        "thirdParty": "Third Party",
+        "thirdPartyDesc": "Allow third-party data sharing",
+        "location": "Location Data",
+        "locationDesc": "Allow location data collection",
+        "health": "Health Data",
+        "healthDesc": "Allow health data collection",
+        "social": "Social Features",
+        "socialDesc": "Allow social features and sharing"
+      },
+      "gdprRights": "GDPR Rights",
+      "dataPortability": "Data Portability",
+      "dataPortabilityDesc": "Export your personal data in a portable format",
+      "rightToBeForgotten": "Right to be Forgotten",
+      "rightToBeForgottenDesc": "Request deletion of your personal data",
+      "enable": "Enable",
+      "enabled": "Enabled",
+      "request": "Request",
+      "requested": "Requested"
+    },
+    "requests": {
+      "title": "Data Requests",
+      "createNew": "Create New Request",
+      "type": "Type",
+      "status": "Status",
+      "created": "Created",
+      "actions": "Actions",
+      "types": {
+        "data_portability": "Data Portability",
+        "right_to_be_forgotten": "Right to be Forgotten"
+      },
+      "statuses": {
+        "pending": "Pending",
+        "processing": "Processing",
+        "completed": "Completed",
+        "failed": "Failed",
+        "cancelled": "Cancelled"
+      },
+      "description": "Description",
+      "format": "Format",
+      "urgent": "Mark as urgent",
+      "retry": "Retry",
+      "cancel": "Cancel"
+    },
+    "audit": {
+      "title": "Audit Logs",
+      "totalLogs": "Total Logs",
+      "successfulActions": "Successful Actions",
+      "failedActions": "Failed Actions",
+      "action": "Action",
+      "severity": "Severity",
+      "resource": "Resource",
+      "timestamp": "Timestamp"
+    },
+    "security": {
+      "title": "Security Monitoring",
+      "criticalEvents": "Critical Events",
+      "highEvents": "High Severity Events",
+      "riskLevel": "Risk Level",
+      "openEvents": "Open Events",
+      "recentEvents": "Recent Security Events"
+    }
+  },
+  "common": {
+    "cancel": "Cancel",
+    "create": "Create",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "warning": "Warning",
+    "info": "Information"
   }
 }

@@ -23,6 +23,7 @@ import { GamificationModule } from './modules/gamification/gamification.module';
 import { GardenVisualizationModule } from './modules/garden-visualization/garden-visualization.module';
 import { ExportImportModule } from './modules/export-import/export-import.module';
 import { AiEnhancedModule } from './modules/ai-enhanced/ai-enhanced.module';
+import { DataPrivacyModule } from './modules/data-privacy/data-privacy.module';
 
 @Module({
   imports: [
@@ -53,6 +54,7 @@ import { AiEnhancedModule } from './modules/ai-enhanced/ai-enhanced.module';
     GardenVisualizationModule,
     ExportImportModule,
     AiEnhancedModule,
+    DataPrivacyModule,
   ],
   controllers: [AppController],
   providers: [AppService],

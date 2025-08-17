@@ -251,12 +251,10 @@ Open [**http://localhost:3000**](http://localhost:3000) to view your app.
 - **Social Features** - Friend connections, habit sharing, and social interactions
 - **Wearable Integrations** - Health data tracking, device management, and automatic synchronization
 - **Advanced Garden Visualization** - 3D garden views, custom themes, seasonal layouts, and garden sharing
-- **Enhanced AI Features** - Natural language processing, image recognition, voice commands, and smart reminders
-- **Advanced Mobile Features** - Offline mode, widgets, smartwatch integration, and background synchronization
+- **Enhanced AI Features** - Natural language processing, image recognition, voice commands, and smart reminders - **Advanced Mobile Features** - Offline mode, widgets, smartwatch integration, and background synchronization - **Data & Privacy** - Privacy controls, audit logs, GDPR compliance, and advanced security
 
-### 📋 **Planned Features**
+            ### 📋 **Planned Features**
 
-- **Data & Privacy** - Privacy controls, audit logs, and security enhancements
 - **Integration Ecosystem** - Calendar integration, task management, and smart home
 - **Advanced Social Features** - Habit groups, mentorship, and social challenges
 - **Performance & Scalability** - Caching, background jobs, and monitoring
@@ -876,9 +874,7 @@ Bloomhabit now features a comprehensive 3D garden visualization system that tran
 - **v2.1** – Advanced analytics, habit correlation analysis, and predictive insights.
 - **v2.2** – Gamification system with achievements, levels, and rewards.
 - **v2.3** – Enhanced 3D garden visualization and custom garden layouts.
-- **v2.4** – Natural language processing, voice commands, and smart reminders. ✅ **COMPLETED**
-- **v2.5** – Advanced mobile features: offline mode, widgets, smartwatch apps. ✅
-- **v2.6** – Data privacy tools, GDPR compliance, and advanced security.
+- **v2.4** – Natural language processing, voice commands, and smart reminders. ✅ **COMPLETED** - **v2.5** – Advanced mobile features: offline mode, widgets, smartwatch apps. ✅ - **v2.6** – Data privacy tools, GDPR compliance, and advanced security. ✅
 - **v2.7** – Extended integration ecosystem (calendars, task managers, smart home).
 - **v2.8** – Advanced social features: mentorship, habit groups, social challenges.
 - **v2.9** – Performance optimization, caching, and scalability improvements.
