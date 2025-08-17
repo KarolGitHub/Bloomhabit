@@ -246,5 +246,37 @@
       "automations": "Automations",
       "confirmDelete": "Are you sure you want to delete this smart home integration?"
     }
+  },
+  "advancedSocial": {
+    "title": "Advanced Social Features",
+    "description": "Connect with others through habit groups, mentorship, and social challenges",
+    "groups": {
+      "title": "Habit Groups",
+      "description": "Create and join habit-focused communities",
+      "active": "active groups",
+      "members": "members",
+      "create": "Create Group",
+      "search": "Search Groups"
+    },
+    "mentorship": {
+      "title": "Mentorship",
+      "description": "Connect with mentors and mentees for guidance",
+      "total": "total mentorships",
+      "create": "Create Mentorship",
+      "search": "Search Mentors"
+    },
+    "challenges": {
+      "title": "Social Challenges",
+      "description": "Participate in group habit challenges",
+      "active": "active challenges",
+      "participants": "participants",
+      "create": "Create Challenge",
+      "search": "Search Challenges"
+    },
+    "tabs": {
+      "groups": "Groups",
+      "mentorship": "Mentorship",
+      "challenges": "Challenges"
+    }
   }
 }
