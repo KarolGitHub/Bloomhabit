@@ -25,6 +25,7 @@ import { ExportImportModule } from './modules/export-import/export-import.module
 import { AiEnhancedModule } from './modules/ai-enhanced/ai-enhanced.module';
 import { DataPrivacyModule } from './modules/data-privacy/data-privacy.module';
 import { IntegrationEcosystemModule } from './modules/integration-ecosystem/integration-ecosystem.module';
+import { PerformanceModule } from './modules/performance/performance.module';
 
 @Module({
   imports: [
@@ -57,6 +58,7 @@ import { IntegrationEcosystemModule } from './modules/integration-ecosystem/inte
     AiEnhancedModule,
     DataPrivacyModule,
     IntegrationEcosystemModule,
+    PerformanceModule,
   ],
   controllers: [AppController],
   providers: [AppService],

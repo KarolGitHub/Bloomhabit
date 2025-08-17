@@ -20,6 +20,7 @@
             <NuxtLink to="/data-privacy" class="text-gray-600 hover:text-green-600 transition-colors">Data & Privacy</NuxtLink>
             <NuxtLink to="/integration-ecosystem" class="text-gray-600 hover:text-green-600 transition-colors">Integrations</NuxtLink>
             <NuxtLink to="/advanced-social" class="text-gray-600 hover:text-green-600 transition-colors">Advanced Social</NuxtLink>
+            <NuxtLink to="/performance-scalability" class="text-gray-600 hover:text-green-600 transition-colors">Performance</NuxtLink>
             <button class="flower-button">Sign In</button>
           </nav>
         </div>
@@ -182,6 +183,14 @@
             <p class="text-gray-600">Create habit groups, find mentors, and participate in social challenges to accelerate your growth journey.</p>
             <NuxtLink to="/advanced-social" class="button primary small rounded mt-4">
               👥 Explore Social Features
+            </NuxtLink>
+          </div>
+          <div class="garden-card text-center">
+            <div class="text-4xl mb-4">⚡</div>
+            <h4 class="text-xl font-semibold mb-3">Performance & Scalability</h4>
+            <p class="text-gray-600">Advanced caching, background job processing, and real-time monitoring for optimal application performance.</p>
+            <NuxtLink to="/performance-scalability" class="button primary small rounded mt-4">
+              ⚡ Monitor Performance
             </NuxtLink>
           </div>
         </div>

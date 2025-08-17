@@ -278,5 +278,56 @@
       "mentorship": "Mentorship",
       "challenges": "Challenges"
     }
+  },
+  "performanceScalability": {
+    "title": "Performance & Scalability",
+    "description": "Monitor system performance, manage caching, and oversee background job queues for optimal application performance",
+    "overview": {
+      "metrics": {
+        "title": "System Metrics",
+        "description": "Real-time monitoring of system resources and performance"
+      },
+      "cache": {
+        "title": "Cache Management",
+        "description": "Monitor and manage Redis cache performance and usage"
+      },
+      "queues": {
+        "title": "Job Queues",
+        "description": "Background job processing and queue management"
+      },
+      "health": {
+        "title": "System Health",
+        "description": "Overall system health status and component monitoring"
+      }
+    },
+    "tabs": {
+      "monitoring": "Monitoring",
+      "caching": "Caching",
+      "queues": "Queues"
+    },
+    "monitoring": {
+      "systemMetrics": "System Metrics",
+      "memory": "Memory Usage",
+      "cpu": "CPU Usage",
+      "uptime": "Uptime",
+      "healthCheck": "Health Check"
+    },
+    "caching": {
+      "operations": "Cache Operations",
+      "refresh": "Refresh Stats",
+      "reset": "Reset Cache",
+      "statistics": "Cache Statistics",
+      "totalKeys": "Total Keys",
+      "memoryUsage": "Memory Usage"
+    },
+    "queues": {
+      "overview": "Queue Overview",
+      "pause": "Pause",
+      "resume": "Resume"
+    },
+    "actions": {
+      "refreshAll": "Refresh All",
+      "runHealthCheck": "Run Health Check"
+    }
   }
 }
