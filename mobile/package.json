@@ -7,7 +7,14 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:ci": "jest --ci --coverage --watchAll=false",
+    "test:e2e": "detox test -c ios.sim.debug",
+    "test:e2e:android": "detox test -c android.emu.debug",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "type-check": "tsc --noEmit",
     "build:android": "cd android && ./gradlew assembleRelease",
     "build:ios": "cd ios && xcodebuild -workspace BloomhabitMobile.xcworkspace -scheme BloomhabitMobile -configuration Release -destination generic/platform=iOS -archivePath BloomhabitMobile.xcarchive archive"
   },
@@ -67,7 +74,12 @@
     "metro-react-native-babel-preset": "0.76.8",
     "prettier": "^2.4.1",
     "react-test-renderer": "18.2.0",
-    "typescript": "4.8.4"
+    "typescript": "4.8.4",
+    "@testing-library/react-native": "^12.4.0",
+    "@testing-library/jest-native": "^5.4.3",
+    "detox": "^20.10.0",
+    "react-native-testing-library": "^12.4.0",
+    "mock-async-storage": "^1.0.2"
   },
   "jest": {
     "preset": "react-native"

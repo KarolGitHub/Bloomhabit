@@ -8,7 +8,16 @@
     "dev": "npx nuxt dev",
     "generate": "npx nuxt generate",
     "preview": "npx nuxt preview",
-    "postinstall": "npx nuxt prepare"
+    "postinstall": "npx nuxt prepare",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "test:ui": "vitest --ui",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "type-check": "vue-tsc --noEmit"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -17,7 +26,17 @@
     "nuxt": "^3.8.0",
     "pinia": "^2.1.7",
     "sass": "^1.69.0",
-    "sass-loader": "^13.3.0"
+    "sass-loader": "^13.3.0",
+    "@nuxt/test-utils": "^3.8.0",
+    "@vitest/ui": "^1.0.0",
+    "@vue/test-utils": "^2.4.0",
+    "vitest": "^1.0.0",
+    "jsdom": "^23.0.0",
+    "@playwright/test": "^1.40.0",
+    "eslint": "^8.55.0",
+    "eslint-config-nuxt": "^0.1.0",
+    "vue-tsc": "^1.8.0",
+    "@types/node": "^20.10.0"
   },
   "dependencies": {
     "@nuxtjs/i18n": "^10.0.5",
